@@ -1,0 +1,2415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<!-- ********************************************************************************************************** -->
+	<!-- * Questel st.36 Patent Document Schema v3.3 		                                                      * -->
+    <!-- ********************************************************************************************************** -->
+	<!-- *                                                                                                        * -->
+	<!-- * Change History                                                                                         * -->
+	<!-- *                                                                                                        * -->
+	<!-- * November 2011(3.2)                                                                                     * -->
+	<!-- * Add element "org-name" in group "name-group"                                                           * -->
+	<!-- *                                                                                                        * -->
+	<!-- * January 2012 (3.3)                                                                                     * -->
+	<!-- * o  Add  maxOccurs="unbounded" in element ref="heading" of name="amended-claims"                        * --> 
+	<!-- * o  Add  minOccurs="0" in element ref="claim" of name="amended-claims"                                  * -->
+	<!--                                                                                                          * -->
+	<!-- * January 2012 (3.4)                                                                                     * -->
+	<!-- * o  Suppress "fixed" in attribute "schema-version"                                                      * --> 
+	<!-- *                                                                                                        * -->
+	<!-- * April 2012 (3.5)                                                                                       * -->
+	<!-- * o  Add attributes "family-id" and "is-representative" in element application-reference                 * --> 
+	<!-- *                                                                                                        * -->
+	<!-- * May 2012 (3.6)                                                                                         * -->
+	<!-- * o  Suppress positive value control in element "number-of-claims"                                       * --> 
+	<!-- * o  Add alphabetic value in element "independent-claims"                                                * --> 
+	<!-- *                                                                                                        * -->
+	<!-- * Juin 2012 (3.7)                                                                                        * -->
+	<!-- * o  Authorize multiple relation in element "substitution"                                               * --> 
+	<!-- * o  Add value "first_claim" in simpleType "format-type"                                                 * -->
+	<!-- *                                                                                                        * -->
+	<!-- * July 2012 (3.8)                                                                                        * -->
+	<!-- * o  Add element "date-coming-into-force" in element "related-documents"                                 * --> 
+	<!-- * o  Add element "text" in element "document-id"                                                         * -->
+	<!-- *                                                                                                        * -->
+	<!-- * November 2012 (3.9)                                                                                    * -->
+	<!-- * o  Add element  "patent-classifications" with new complexType name="patent-classificationsType"        * -->
+	<!-- *                                                                                                        * -->
+	<!-- * July 2013 (3.10)                                                                                       * -->
+	<!-- * o Add element "lgst-data" in element "bibliographic-data"                                              * -->
+	<!-- * o Add element "lgst-status" in element "lgst-data"                                                     * -->
+	<!-- *                                                                                                        * -->
+	<!-- * December 2013 (3.11)                                                                                   * -->
+	<!-- * o  Add element  "image-key"                                                                            * -->
+	<!-- *                                                                                                        * -->
+	<!-- * February 2014 (3.11)                                                                                   * -->
+	<!-- * o Type of attribute format of element "invention-title" and "abstract" becomes string                  * -->
+	<!-- *                                                                                                        * -->
+	<!-- * July 2014 (3.12)                                                                                       * -->
+	<!-- * o Add element "action-date" in element "classification-ipcr"                                           * -->
+	<!-- * o Add elements "city","state","postcode" in element "address"                                          * -->
+	<!-- * o Modify default attribute in element "document-id" (eng -> en)                                        * -->
+	<!-- * o Add elements "priority-linkage-type","priority-active-indicator" in element "priority-claim"         * -->
+	<!-- * o Add elements "continuing-reissue","reexamination-issue-merger","utility-model-basis",                * -->
+    <!-- *   "previously-filed-application","correction","change-of-application","change-of-utility"              * -->
+    <!-- *   "previous-publication","technical-priority","supplementary-disclosure","widerrechtliche-entnahme"    * -->
+    <!-- *   "priority"                                                                                           * -->
+	<!-- * o Add elements "questel_Uid","machine_translation","human_translation","transcript" in element         * -->
+	<!-- *   "data-format-type"                                                                                   * -->
+	<!-- * o Add elements "machine_translation","human_translation","transcript" in element ""format-type"        * -->
+	<!-- * o Modify pattern of element "language-type" ([a-z]{3} -> [a-z]{2})                                     * -->
+	<!-- *                                                                                                        * -->
+	<!-- * August 2014 (3.13)                                                                                     * -->
+	<!-- * o Modify pattern of element "subgroup"                                                                 * -->
+	<!-- * o min-occurs=0 for main-classification                                                                 * -->
+	<!-- *                                                                                                        * -->
+	<!-- * September 2014 (3.14)                                                                                  * -->
+	<!-- * o Authorize text and documentId in element "patcit"                                                    * -->
+	<!-- *                                                                                                        * -->
+	<!-- * September 2014 (3.15)                                                                                  * -->
+	<!-- * o Add attribute "format" in element "amended-claims"                                                   * -->
+	<!-- * o All format depends on enumeration in data-format-type                                                * -->
+	<!-- *                                                                                                        * -->	
+	<!-- * November 2014 (3.16 )                                                                                  * -->
+	<!-- * o Add "/" in pattern of element "subgroup"                                                             * -->
+	<!-- * o Authorize missing country in element "region"                                                        * -->	   	   	                                             
+	<!-- *                                                                                                        * -->	
+	<!-- * January 2015 (3.17  )                                                                                  * -->
+	<!-- * o Add "C" in list restriction of element "classification-data-source"                                  * -->
+	<!-- *                                                                                                        * -->	
+	<!-- * June 2015 (3.18  )                                                                                     * -->
+	<!-- * o Suppress list of element in "p" and "claim-text" and select any element                              * -->
+	<!-- * (<xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>)                                  * -->
+	<!-- *                                                                                                        * -->
+    <!-- * September 2015 (3.19)                                                                                  * -->
+    <!-- * o Change restriction to element Text                                                                   * -->
+    <!-- * (<xs:restriction base="xs:string" />)                                                                  * -->	
+    <!-- *                                                                                                        * -->
+    <!-- * Janvier 2016 (3.20)                                                                                    * -->
+    <!-- * o Add new element <forward-patent-citations> part of bibliographic-data                                * -->
+    <!-- * (citing patents)                                                                                       * -->	
+    <!-- *                                                                                                        * -->
+    <!-- * Avril 2016 (3.21)                                                                                      * -->
+    <!-- * o Add new element <patent-assignment> part of bibliographic-data                                       * -->
+    <!-- * (reassignment including LICI SECI informations)                                                        * -->
+    <!-- *                                                                                                        * -->
+    <!-- * September 2016 (3.22)                                                                                  * -->
+    <!-- * o Allow any element under <heading> element                                                            * -->
+    <!-- * o Add attribute align in <heading> element                                                             * -->
+    <!-- * o Allow any element under <text> element                                                               * -->
+    <!-- * o Add attribute id in <text> element                                                                   * -->
+    <!-- * o Attribute level of <heading> element can have more than 1 digit with pattern [0-9]                   * -->
+    <!-- * o Attribute level of <heading> element can have more than 1 digit with pattern String                  * -->
+    <!-- *                                                                                                        * -->    
+    <!-- * November 2016 (3.23)                                                                                   * -->
+	<!-- * o Allow any tag in element <p> without control                                                         * -->
+	<!-- * ( <xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>)                                * -->	
+	<!-- *                                                                                                        * -->    
+    <!-- * December 2017 (3.23)                                                                                   * -->
+	<!-- * o  Add attributes "extended-family-id"                                                                 * -->	
+	<!-- ********************************************************************************************************** -->
+   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2009/01/xml.xsd" />
+    
+   <!-- ********** Schema Root Elements ********** -->
+	<xs:element name="questel-patent-document">
+		<xs:annotation>
+			<xs:documentation>
+				The top-level element of any patent document exported from the database according to WIPO st.36, USPTO st.36 and EPO st.36.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="bibliographic-data" />
+				<xs:element ref="abstract" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="description" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="claims" minOccurs="0" maxOccurs="unbounded" />
+			    <xs:element ref="amended-claims" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="lang" type="language-type" use="required" />
+			<xs:attribute name="schema-version" type="schema-version-type" use="required"/>
+			<xs:attribute name="date-produced" type="date-type" use="required" />
+			<xs:attribute name="file" type="xs:string" />
+			<xs:attribute name="status" type="xs:string" />
+			<xs:attribute name="produced-by" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+
+
+	<!-- ********** Schema Elements (sorted from A-Z) ********** -->
+	<xs:element name="abstract">
+		<xs:annotation>
+			<xs:documentation>
+				A concise summary of the disclosure, 50-150 words. (ST.32 equivalency = B570)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType >
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="heading" minOccurs="0" maxOccurs="unbounded" />
+					<xs:element ref="p" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="lang" type="language-type" />
+			<xs:attribute name="format" type="data-format-type" />
+			<xs:attribute name="status" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="action-date">
+		<xs:annotation>
+			<xs:documentation>
+				Date
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="date" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="addition">
+		<xs:annotation>
+			<xs:documentation>
+				Earlier document to which this is an addition. (ST.32 equivalency = B610)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="address">
+		<xs:annotation>
+			<xs:documentation>
+				Address information.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="address-1" minOccurs="0" />
+					<xs:element ref="city" minOccurs="0" />
+					<xs:element ref="state" minOccurs="0" />
+					<xs:element ref="postcode" minOccurs="0" />
+					<xs:element ref="country" minOccurs="0" />
+				</xs:sequence>
+				<xs:element ref="text" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="address-1">
+		<xs:annotation>
+			<xs:documentation>
+				Address, first line.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="addressbook">
+		<xs:annotation>
+			<xs:documentation>
+				ADDRESSBOOK GROUP: Holds name and contact information for individuals/organizations. The LANG attribute is REQUIRED for certain document types, e.g. the JPO PCT Request where names and addresses may be repeated in two different languages. If no structure possible use text.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:group ref="name-group" />
+					<xs:element ref="address" minOccurs="0" />
+				</xs:sequence>
+				<xs:element ref="text" />
+			</xs:choice>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="lang" type="language-type" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="agent">
+		<xs:annotation>
+			<xs:documentation>
+				Agents and attorneys. (ST.32 equivalency = B741)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="addressbook" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="sequence" type="sequence-type" use="required" />
+			<xs:attribute name="rep-type" type="representative-type" use="required" />
+			<xs:attribute name="data-format" type="data-format-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="agents">
+		<xs:annotation>
+			<xs:documentation>
+				Information regarding Agents or common representatives.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="agent" maxOccurs="unbounded" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="applicant">
+		<xs:annotation>
+			<xs:documentation>
+				(US: applicant is always the inventor. Use "applicant" with applicant type attribute of "applicant-inventor".)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="addressbook" maxOccurs="unbounded" />
+				<xs:element ref="nationality" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="sequence" type="sequence-type" use="required" />
+			<xs:attribute name="app-type" type="applicant-type" />
+			<xs:attribute name="data-format" type="data-format-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="applicants">
+		<xs:annotation>
+			<xs:documentation>
+				Applicants information.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="applicant" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="application-reference">
+		<xs:annotation>
+			<xs:documentation>
+				Application reference information: application number, country. (ST.32 equivalency = B210)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document-id"  maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="family-id" type="xs:string"/>
+			<xs:attribute name="extended-family-id" type="xs:string"/>
+			<xs:attribute name="is-representative">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="YES"/>
+						<xs:enumeration value="NO"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>		
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="assistant-examiner">
+		<xs:annotation>
+			<xs:documentation>
+				Assisten examiner (ST.32 equivalency = B747)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="name-group" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="bibliographic-data">
+		<xs:annotation>
+			<xs:documentation>
+				Bibliographic data of patent document.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="publication-reference" minOccurs="0" />
+				<xs:element ref="original-publication-kind" minOccurs="0" />
+				<xs:element ref="application-reference" minOccurs="0" />
+				<xs:element ref="language-of-filing" minOccurs="0" />
+				<xs:element ref="language-of-publication" minOccurs="0" />
+				<xs:element ref="priority-claims" minOccurs="0" />
+				<xs:element ref="dates-of-public-availability" minOccurs="0" />
+				<xs:element ref="term-of-grant" minOccurs="0" />
+				<xs:element ref="classification-ipc" minOccurs="0" />
+				<xs:element ref="classifications-ipcr" minOccurs="0" />
+				<xs:element ref="classification-national" minOccurs="0" />
+				<xs:element ref="classifications-ecla" minOccurs="0" />
+				<xs:element ref="patent-classifications" minOccurs="0"/>
+				<xs:element ref="field-of-search" minOccurs="0" />
+				<xs:element ref="number-of-claims" minOccurs="0" />
+				<xs:element ref="exemplary-claim" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="independent-claims" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="figures" minOccurs="0" />
+				<xs:element ref="invention-title" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="references-cited" minOccurs="0" />
+				<xs:element ref="forward-patent-citations" minOccurs="0" />				
+				<xs:element ref="related-documents" minOccurs="0" />
+				<xs:element ref="parties" minOccurs="0" />
+				<xs:element ref="examiners" minOccurs="0" />
+				<xs:element ref="designation-of-states" minOccurs="0" />
+				<xs:element ref="pct-or-regional-filing-data" minOccurs="0" />
+				<xs:element ref="pct-or-regional-publishing-data" minOccurs="0" />
+				<xs:element ref="lgst-data" minOccurs="0" />
+				<xs:element ref="patent-assignments" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="lang" type="language-type" use="required" />
+			<xs:attribute name="date-changed" type="date-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="br">
+		<xs:annotation>
+			<xs:documentation>
+				Break, line break within a paragraph.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType />
+	</xs:element>
+
+	<xs:element name="category">
+		<xs:annotation>
+			<xs:documentation>
+				Categories indicating cited documents (references) of particular relevance. (US: used for different data types depending on context.)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="citation">
+		<xs:annotation>
+			<xs:documentation>
+				Grouping tag for patent literature (patcit) or non-patent literature (nplcit) plus data related to those citations.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element ref="patcit" />
+					<xs:element ref="nplcit" />
+				</xs:choice>
+				<xs:element ref="category" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="classification-ipc" minOccurs="0" />
+				<xs:element ref="classifications-ipcr" minOccurs="0" />
+				<xs:element ref="classification-national" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="srep-phase" type="text-type" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="claim">
+		<xs:annotation>
+			<xs:documentation>
+				Defines the matter for which protection is sought.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="claim-text" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="num" type="xs:string" />
+			<xs:attribute name="claim-type" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="claim-text">
+		<xs:annotation>
+			<xs:documentation>
+				The text of the claim; also used for for sub-para indentation.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice maxOccurs="unbounded">
+				<xs:sequence>
+					<xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="claims">
+		<xs:annotation>
+			<xs:documentation>
+				Claims of patent document.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="claim" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="lang" type="language-type" />
+			<xs:attribute name="format" type="data-format-type" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="date-coming-into-force">		
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="amended-claims">
+		<xs:annotation>
+			<xs:documentation>
+				  Amended content of original application
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence maxOccurs="unbounded">
+					  <xs:element ref="heading" minOccurs="0" maxOccurs="unbounded"/>
+					  <xs:element ref="claim" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute name="id" type="xs:string"/>
+			<xs:attribute name="lang" type="xs:string" use="required"/>
+			<xs:attribute name="format" type="data-format-type" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="class">
+		<xs:annotation>
+			<xs:documentation>
+				(US: not used in publication.)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[0-9]{2}" />
+				<xs:pattern value="[A-Z0-9\.\-]+" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="classification-data-source">
+		<xs:annotation>
+			<xs:documentation>
+				IPC8 classification data source, i.e. human, machine generated or generated by software.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="H" />
+				<xs:enumeration value="M" />
+				<xs:enumeration value="G" />
+				<xs:enumeration value="C" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="classification-ecla">
+		<xs:annotation>
+			<xs:documentation>
+				European Patent Classification (ECLA) data. (ST.32 equivalency = B530)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text" />
+				<xs:sequence minOccurs="0">
+					<xs:group ref="classification-group" />
+					<xs:element ref="examiner-edition" minOccurs="0" />
+				</xs:sequence>
+			</xs:sequence>
+			<xs:attribute name="sequence" type="sequence-type" />
+			<xs:attribute name="country" type="country-type" default="EP" />
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="classification-ipc">
+		<xs:annotation>
+			<xs:documentation>
+				International Patent Classification (IPC) data. (ST.32 equivalency = B510)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="main-classification" type="ipc-main-classification-type" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="further-classification" type="ipc-further-classification-type" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="date-changed" type="date-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="classification-ipcr">
+		<xs:annotation>
+			<xs:documentation>
+				IPC8 classification.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text" minOccurs="0"/>
+				<xs:element ref="ipc-version-indicator" minOccurs="0"/>
+				<xs:element ref="classification-level" minOccurs="0" />
+				<xs:group ref="classification-group" />
+				<xs:element ref="symbol-position" minOccurs="0" />
+				<xs:element ref="classification-value" minOccurs="0" />
+				<xs:element ref="generating-office" minOccurs="0" />
+				<xs:element ref="classification-status" minOccurs="0" />
+				<xs:element ref="classification-data-source" minOccurs="0" />
+				<xs:element ref="action-date" minOccurs="0" />
+			</xs:sequence>			
+			<xs:attribute name="sequence" type="sequence-type" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="classification-level">
+		<xs:annotation>
+			<xs:documentation>
+				IPC8 classification level, i.e. Core, Advanced or Subclass.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="C" />
+				<xs:enumeration value="A" />
+				<xs:enumeration value="S" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+
+	<xs:element name="classification-national">
+		<xs:annotation>
+			<xs:documentation>
+				Domestic or national classification. (ST.32 equivalency = B520)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="country" />
+				<xs:element name="main-classification" type="national-main-classification-type" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="further-classification" type="national-further-classification-type" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="text" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="date-changed" type="date-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="classification-status">
+		<xs:annotation>
+			<xs:documentation>
+				IPC8 classification status, i.e. original, reclassified etc.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="B" />
+				<xs:enumeration value="R" />
+				<xs:enumeration value="V" />
+				<xs:enumeration value="D" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="classification-value">
+		<xs:annotation>
+			<xs:documentation>
+				IPC8 classification value, i.e. inventive or non-inventive.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="I" />
+				<xs:enumeration value="N" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="classifications-ecla">
+		<xs:annotation>
+			<xs:documentation>
+				ECLA classification.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="classification-ecla" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="classifications-ipcr">
+		<xs:annotation>
+			<xs:documentation>
+				IPC8 classification.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="classification-ipcr" maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="continuation">
+		<xs:annotation>
+			<xs:documentation>
+				Earlier application of which the present document is a continuation. (ST.32 equivalency = B631)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="continuation-in-part">
+		<xs:annotation>
+			<xs:documentation>
+				Document of which this is a continuation-in-part. (ST.32 equivalency = B632)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="contracting-states">
+		<xs:annotation>
+			<xs:documentation>
+				EPO Designated Contracting States.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="country" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="country">
+		<xs:annotation>
+			<xs:documentation>
+				Country: use ST.3 country code, e.g. DE, FR, GB, NL, etc. Also includes EP, WO, etc.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[A-Z]{2}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="date">
+		<xs:annotation>
+			<xs:documentation>
+				Components of a date. Format: YYYYMMDD.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="date-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="dates-of-public-availability">
+		<xs:annotation>
+			<xs:documentation>
+				Dates of public availability. (ST.32 equivalency = B400)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="unexamined-printed-without-grant" minOccurs="0" />
+				<xs:element ref="publication-of-grant-date" minOccurs="0" />
+				<xs:element ref="term-of-grant" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="department">
+		<xs:annotation>
+			<xs:documentation>
+				Name of department, division, section, etc.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="city">
+		<xs:annotation>
+			<xs:documentation>
+				Name of city
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="state">
+		<xs:annotation>
+			<xs:documentation>
+				Name of state
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+		
+	<xs:element name="postcode">
+		<xs:annotation>
+			<xs:documentation>
+				Number of postcode
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="description">
+		<xs:annotation>
+			<xs:documentation>
+				Description: The description must disclose the invention in a manner sufficiently clear and complete for it to be carried out by a person skilled in the art (Rule 5).
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:sequence>
+					<xs:element ref="heading" minOccurs="0" maxOccurs="unbounded" />
+					<xs:element ref="p"  minOccurs="0" maxOccurs="unbounded" />								
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="lang" type="language-type" />
+			<xs:attribute name="format" type="data-format-type" />
+			<xs:attribute name="status" type="xs:string" />
+			
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="designation-epc">
+		<xs:annotation>
+			<xs:documentation>
+				EPO Designation Of States.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="contracting-states" minOccurs="0" />
+				<xs:element ref="extension-states" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="designation-of-states">
+		<xs:annotation>
+			<xs:documentation>
+				PCT/RO/101 Box No.V Designation Of States (PCT Rule 4.9)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="designation-pct" minOccurs="0" />
+				<xs:element ref="designation-epc" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="designation-pct">
+		<xs:annotation>
+			<xs:documentation>
+				The Contracting States in which protection is desired  (Rules 4.1(a)(iv) and 4.9(a))
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="regional" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="national" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+        <xs:element name="disclaimer">
+                <xs:annotation>
+                        <xs:documentation>
+                                Disclaimer date. (ST.32 equivalency = B473)
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                        <xs:sequence>
+                                <xs:element ref="date" minOccurs="0" />
+                                <xs:element ref="text" minOccurs="0" />
+                        </xs:sequence>
+                </xs:complexType>
+        </xs:element>
+
+
+        <xs:element name="disclaimers">
+                <xs:annotation>
+                        <xs:documentation>
+                                US Post-issuance disclaimers.
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                        <xs:sequence>
+                                <xs:element name="disclaimer" type="post-issuance-element-type" maxOccurs="unbounded" />
+                        </xs:sequence>
+                </xs:complexType>
+        </xs:element>
+
+
+	<xs:element name="division">
+		<xs:annotation>
+			<xs:documentation>
+				Earlier application from which the present document has been divided out. (ST.32 equivalency = B620)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="divisional-reissue">
+		<xs:annotation>
+			<xs:documentation>
+				Document (parent) of which the document in hand (child) is a divisional reissue. If there is more than one divisional reissue, siblings are indicated by multiple occurences of child. (ST.32 equivalency = B641US)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="us-relation" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="doc-number">
+		<xs:annotation>
+			<xs:documentation>
+				Document number.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="document-id">
+		<xs:annotation>
+			<xs:documentation>
+				Document identifier.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="country" minOccurs="0"/>
+				<xs:element ref="doc-number" minOccurs="0" />
+				<xs:element ref="kind" minOccurs="0" />
+				<xs:element ref="name" minOccurs="0" />
+				<xs:element ref="date" minOccurs="0" />
+				<xs:element ref="text" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="lang" type="language-type" default="en" />
+			<xs:attribute name="data-format" type="data-format-type" use="optional" /> 
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="edition">
+		<xs:annotation>
+			<xs:documentation>
+				Edition statement. Indicates the edition of the classification schedule.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[0-9]" />
+				<xs:pattern value="unknown" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="examiner-edition">
+		<xs:annotation>
+			<xs:documentation>
+				European Patent Classification (ECLA) examiner edition.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="examiners">
+		<xs:annotation>
+			<xs:documentation>
+				Persons acting on the document. (ST.32 equivalency = B745)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="primary-examiner" minOccurs="0" />
+				<xs:element ref="assistant-examiner" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="exemplary-claim">
+		<xs:annotation>
+			<xs:documentation>Claim for publication in Official Gazette. (ST.32 name: B578US)</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="independent-claims">
+                <xs:annotation>
+                        <xs:documentation>
+                                Independant Claim Number
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                                <xs:pattern value="[0-9,.A-Za-z]+" />
+                        </xs:restriction>
+                </xs:simpleType>
+	</xs:element>
+
+	<xs:element name="extension-states">
+		<xs:annotation>
+			<xs:documentation>
+				EPO Designated Extension States.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="country" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="field-of-search">
+		<xs:annotation>
+			<xs:documentation>
+				Field of search. (ST.32 equivalency = B580)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="classification-ipc" />
+				<xs:element ref="classifications-ipcr" />
+				<xs:element ref="classification-national" />
+			</xs:choice>
+			<xs:attribute name="date-changed" type="date-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="figures">
+		<xs:annotation>
+			<xs:documentation>Drawing pages with figures. (ST.32 name: B590)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="number-of-drawing-sheets" minOccurs="0" />
+				<xs:element ref="number-of-figures" minOccurs="0" />
+				<xs:element ref="image-key" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="generating-office">
+		<xs:annotation>
+			<xs:documentation>
+				IPC8 generating office.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="country" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="heading">
+		<xs:annotation>
+			<xs:documentation>
+				Heading. Level attribute determines indentation and style.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice maxOccurs="unbounded">
+				<xs:sequence>
+					<xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute name="align" type="xs:string" />
+			<xs:attribute name="level" type="xs:string" />
+			<xs:attribute name="id" type="xs:ID" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="image-key">
+		<xs:annotation>
+			<xs:documentation>
+				image name - don't mean that image exists
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attribute name="data-format" type="data-format-type" use="optional" />
+		</xs:complexType>		
+	</xs:element>
+
+	<xs:element name="invention-title">
+		<xs:annotation>
+			<xs:documentation>
+				Preferably two to seven words when in English or translated into English and precise. (ST.32 equivalency = B540/B542)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="lang" type="language-type" />
+			<xs:attribute name="format" type="data-format-type" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="inventor">
+		<xs:annotation>
+			<xs:documentation>
+				The individual or entity responsible for creating the matter that protection is sought for. (US: populated only when the inventor was unable to be the applicant.)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="addressbook" maxOccurs="unbounded" />
+				<xs:element ref="nationality" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="sequence" type="sequence-type" use="required" />
+			<xs:attribute name="data-format" type="data-format-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="inventors">
+		<xs:annotation>
+			<xs:documentation>
+				Inventors information.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="inventor" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ipc-version-indicator">
+		<xs:annotation>
+			<xs:documentation>
+				IPC8 version indicator.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="date" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="kind">
+		<xs:annotation>
+			<xs:documentation>
+				Document kind.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="kind-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="language-of-filing">
+		<xs:annotation>
+			<xs:documentation>
+				Filing language, ISO639 language code, e.g, en,de,ja, etc. (ST.32 equivalency = B250)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="language-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="language-of-publication">
+		<xs:annotation>
+			<xs:documentation>
+				Publication language, ISO639 language code, e.g, en,de,ja, etc. (ST.32 equivalency = B260)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="language-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="lgst-data">
+		<xs:annotation>
+			<xs:documentation>
+				Legal Status Data
+                        </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element ref="lgst-status" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="lgst-status">
+		<xs:annotation>
+			<xs:documentation>
+				Lgst Status.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="main-group">
+		<xs:annotation>
+			<xs:documentation>
+				Classification main group.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[0-9]+" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="name">
+		<xs:annotation>
+			<xs:documentation>
+				Name: if no distinction or detail can be given. Also to be used for: personal (natural person) and corporate (legal entity) names.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attribute name="name-type" type="name-type" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="national">
+		<xs:annotation>
+			<xs:documentation>
+				The States for which protection or exclusion (depending upon context) is desired.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element ref="country" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="nationality">
+		<xs:annotation>
+			<xs:documentation>
+				Country of nationality.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="country" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="nplcit">
+		<xs:annotation>
+			<xs:documentation>
+				Non-Patent Literature (NPL) CITation.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="text" maxOccurs="unbounded" />
+				<xs:element ref="document-id" minOccurs="0" maxOccurs="unbounded" />
+			</xs:choice>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="num" type="xs:string" />
+			<xs:attribute name="lang" type="xs:string" />
+			<xs:attribute name="file" type="xs:string" />
+			<xs:attribute name="npl-type" type="citation-type" />
+			<xs:attribute name="medium" type="xs:string" />
+			<xs:attribute name="url" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="number-of-claims">
+		<xs:annotation>
+			<xs:documentation>
+				Number of claims.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:nonNegativeInteger">
+					<xs:attribute name="calculated" type="boolean-type" default="no" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+        <xs:element name="number-of-drawing-sheets">
+                <xs:annotation>
+                        <xs:documentation>Total number of drawing pages submitted. (ST.32 name: B595)</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                        <xs:restriction base="text-type" />
+                </xs:simpleType>
+        </xs:element>
+
+	<xs:element name="number-of-figures">
+		<xs:annotation>
+			<xs:documentation>Number of figures. (ST.32 equivalency = B596)</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	   <xs:element name="orgname">
+		<xs:annotation>
+			<xs:documentation>
+				Organisation name or company name.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	   <xs:element name="org-name">
+		<xs:annotation>
+			<xs:documentation>
+				Organisation name or company name.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="text-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="original-publication-kind">
+		<xs:annotation>
+			<xs:documentation>
+				Original publication kind.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="kind-type" />
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="p">
+		<xs:annotation>
+			<xs:documentation>
+				Paragraph. Recommended id = p01, p02, etc. num = 001, 002, etc. (US: ID is unique in the instance. Num indicates sequence of paragraphs for display.)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice maxOccurs="unbounded">
+				<xs:sequence>
+					<xs:any minOccurs="0" maxOccurs="unbounded" processContents="skip"/>					
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="num" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="parent-doc">
+		<xs:annotation>
+			<xs:documentation>
+				Describes parent document. (ST.32 equivalency = PARENT)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document-id" minOccurs="0" />
+				<xs:element ref="parent-status" minOccurs="0" />
+				<xs:element ref="parent-grant-document" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="parent-grant-document">
+		<xs:annotation>
+			<xs:documentation>
+				If the parent document was granted.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document-id" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="parent-status">
+		<xs:annotation>
+			<xs:documentation>
+				Status of the parent document, i.e. PENDING, GRANTED etc.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="parties">
+		<xs:annotation>
+			<xs:documentation>
+				Parties to the application.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="applicants" minOccurs="0" />
+				<xs:element ref="inventors" minOccurs="0" />
+				<xs:element ref="agents" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="date-changed" type="date-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="patcit">
+		<xs:annotation>
+			<xs:documentation>
+				Cited patents for B documents only. (ST.32 equivalency = B561)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+		 	<xs:sequence>
+	        	<xs:element ref="text" minOccurs="0" maxOccurs="unbounded" />
+	        	<xs:element ref="document-id" minOccurs="0" maxOccurs="unbounded" />
+	        </xs:sequence>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="num" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="patent-classifications" type="patent-classificationsType">
+		<xs:annotation>
+			<xs:documentation>
+Notes on Contents
+	scheme = EC    	office = EP  - from A through H
+	scheme = ICO   	office = EP  - from K through Z
+	scheme = IDT		office = EP	"indeling der techniek"
+	scheme = ECNO  	office = cc
+	scheme = DOCUS	office = US
+	scheme = FI    		office = JP
+	scheme = FTERM	office = JP
+			
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="pct-or-regional-filing-data">
+		<xs:annotation>
+			<xs:documentation>
+				PCT or regional filing information. (ST.32 equivalency = B860)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document-id" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="pct-or-regional-publishing-data">
+		<xs:annotation>
+			<xs:documentation>
+				PCT or regional publication information. (ST.32 equivalency = B870)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document-id" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="primary-examiner">
+		<xs:annotation>
+			<xs:documentation>
+				Primary examiner. (ST.32 equivalency = B746)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="name-group" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="priority-application">
+		<xs:annotation>
+			<xs:documentation>
+				Priority application number. (INID 31, ST.32:B310)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document-id" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="priority-claim">
+		<xs:annotation>
+			<xs:documentation>
+				Priority claim.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="country" minOccurs="0" />
+				<xs:element ref="doc-number"  />
+				<xs:element ref="kind" minOccurs="0" />
+				<xs:element ref="date" minOccurs="0" />
+				<xs:element name="priority-linkage-type" type="xs:string" minOccurs="0" />
+				<xs:element name="priority-active-indicator" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="sequence" type="sequence-type" use="required" />
+			<xs:attribute name="kind" type="priority-kind" use="optional" />
+			<xs:attribute name="data-format" type="data-format-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="priority-claims">
+		<xs:annotation>
+			<xs:documentation>
+				Applications in which priority is claimed.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element ref="priority-claim" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="provisional-application">
+		<xs:annotation>
+			<xs:documentation>
+				Provisional application that is the basis of the document in hand. (ST.32 equivalency = B680US)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document-id" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+        <xs:element name="publication-of-grant-date">
+                <xs:annotation>
+                        <xs:documentation>
+                                Publication date of granted document.
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                        <xs:sequence>
+                                <xs:element ref="date" />
+                                <xs:element ref="text" minOccurs="0" />
+                        </xs:sequence>
+                </xs:complexType>
+        </xs:element>
+
+	<xs:element name="publication-reference">
+		<xs:annotation>
+			<xs:documentation>
+				Publication reference information: publication number, date, etc (ST.32 equivalency = B110)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="document-id"  maxOccurs="unbounded" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" />
+			<xs:attribute name="publ-desc" type="text-type" use="optional" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="reexamination">
+		<xs:annotation>
+			<xs:documentation>
+				Document of which this is a reexamination. (ST.32 equivalency = B645)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="references-cited">
+		<xs:annotation>
+			<xs:documentation>
+				This tag and elements to be used primary to code data on the title page of patents under INID code (56). e.g. US patent. For the search report as a sub-document use search-report, e.g. for ISR. (ST.32 equivalency = B560)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="text" />
+				<xs:sequence>
+					<xs:element ref="citation" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	
+		
+
+	<xs:element name="forward-patent-citations">
+		<xs:annotation>
+			<xs:documentation>
+				Citing patents
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="text" />
+				<xs:sequence>
+					<xs:element ref="citation" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>	
+
+
+	<xs:element name="patent-assignments">
+		<xs:annotation>
+			<xs:documentation>
+				Reassignment including LICI / SECI informations
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="patent-assignment" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>			
+		</xs:complexType>		
+	</xs:element>	
+
+
+	<xs:element name="patent-assignment">
+		<xs:annotation>
+			<xs:documentation>
+				Reassignment including LICI / SECI informations
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" minOccurs="0" />
+				<xs:element name="start-date" type="date-type" minOccurs="0"/>
+				<xs:element name="end-date" type="date-type" minOccurs="0"/>
+				<xs:element name="license-type" type="licensetype" minOccurs="0"/>				
+			</xs:sequence>
+			<xs:attribute name="conveyance-type" type="conveyance-type"/>			
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="region">
+		<xs:annotation>
+			<xs:documentation>
+				The region for which protection or exclusion (depending upon context) is desired.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="country" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="regional">
+		<xs:annotation>
+			<xs:documentation>
+				Regional (as opposed to national) protection being sought
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="region" />
+				<xs:element ref="country" maxOccurs="unbounded"/>
+			</xs:sequence>
+
+		</xs:complexType>
+	</xs:element>
+
+        <xs:element name="registered-number">
+                <xs:annotation>
+                        <xs:documentation>
+                                Registered number, format undefined.
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                        <xs:restriction base="text-type" />
+                </xs:simpleType>
+        </xs:element>
+
+	<xs:element name="reissue">
+		<xs:annotation>
+			<xs:documentation>
+				Document being reissued. (ST.32 equivalency = B640)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="reissues">
+		<xs:annotation>
+			<xs:documentation>
+				US Post-issuance reissues.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="reissue" type="post-issuance-element-type" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="related-documents">
+		<xs:annotation>
+			<xs:documentation>
+				Various relationships between the patent in hand and other patent grants or applications. Contains either an additional application, a divisional application, continuations, reissues, divisional reissues, reexamination, merged reissues reexamination, substitute, or provisional application. (ST.32 equivalency = B600)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="addition" />
+				<xs:element ref="division" />
+				<xs:element ref="continuation" />
+				<xs:element ref="continuation-in-part" />
+				<xs:element ref="reissue" />
+				<xs:element ref="divisional-reissue" />
+				<xs:element ref="reexamination" />
+				<xs:element ref="substitution" />
+				<xs:element ref="provisional-application" />
+				<xs:element ref="related-publication" />
+				<xs:element ref="date-coming-into-force" />
+				<xs:element ref="continuing-reissue" />
+				<xs:element ref="reexamination-issue-merger" />
+				<xs:element ref="utility-model-basis" />
+				<xs:element ref="previously-filed-application" />
+				<xs:element ref="correction" />
+				<xs:element ref="change-of-application" />
+				<xs:element ref="change-of-utility" />
+				<xs:element ref="previous-publication" />
+				<xs:element ref="technical-priority" />
+				<xs:element ref="supplementary-disclosure" />
+				<xs:element ref="widerrechtliche-entnahme" />
+				<xs:element ref="priority" />				
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="related-publication">
+		<xs:annotation>
+			<xs:documentation>
+				Previously published document concerning same application. (ST.32 equivalency = B650)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="document-id" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	
+	<xs:element name="continuing-reissue">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+		
+	<xs:element name="reexamination-issue-merger">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+			
+	<xs:element name="utility-model-basis">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+				
+	<xs:element name="previously-filed-application">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+				
+	<xs:element name="correction">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+					
+	<xs:element name="change-of-application">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+						
+	<xs:element name="change-of-utility">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+						
+	<xs:element name="previous-publication">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+							
+	<xs:element name="technical-priority">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+								
+	<xs:element name="division-of-a-division">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+								
+	<xs:element name="supplementary-disclosure">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+									
+	<xs:element name="widerrechtliche-entnahme">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+											
+	<xs:element name="priority">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="kind" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	
+
+	<xs:element name="relation">
+		<xs:annotation>
+			<xs:documentation>
+				If there is more than one divisional reissue, siblings are indicated by multiple occurences of child.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="parent-doc" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="section">
+		<xs:annotation>
+			<xs:documentation>
+				Classification section.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[A-Z]" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="subclass">
+		<xs:annotation>
+			<xs:documentation>
+				Classification subclass.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[A-Z]" />
+				<xs:pattern value="[A-Z0-9\.\-]+" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="subgroup">
+		<xs:annotation>
+			<xs:documentation>
+				Classification subgroup.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[0-9A-Z\\+&amp;\\/]+" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="substitution">
+		<xs:annotation>
+			<xs:documentation>
+				Document for which this is a substitute. (ST.32 equivalency = B660)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="relation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="symbol-position">
+		<xs:annotation>
+			<xs:documentation>
+				IPC8 classification symbol position, i.e. first or latter.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="F" />
+				<xs:enumeration value="L" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="term-of-grant">
+		<xs:annotation>
+			<xs:documentation>
+				Term of grant. (ST.32 equivalency = B472)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="text" />
+				<xs:element ref="disclaimer" />
+				<xs:element ref="us-term-extension" />
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+		
+	<xs:element name="text">
+		<xs:annotation>
+			<xs:documentation>
+				If no structure is possible, enter text (without markup)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="unexamined-printed-without-grant">
+		<xs:annotation>
+			<xs:documentation>
+				Unexamined printed document without grant. (ST.32 equivalency = B430)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="date" />
+				<xs:element ref="text" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="us-relation">
+		<xs:annotation>
+			<xs:documentation>
+				If there is more than one divisional reissue, siblings are indicated by multiple occurences of child.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="parent-doc" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+        <xs:element name="us-term-extension">
+                <xs:annotation>
+                        <xs:documentation>
+                                Indicates that the term of the patent has been extended under 35 USC 154(b) by showing the length of the extension. The content of this tag must be literally either "5 years", or the number of days (as an integer) if the extension is less than five years. ST.32 name: B474US
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                        <xs:restriction base="text-type" />
+                </xs:simpleType>
+        </xs:element>
+
+
+	<!-- ********** Group Elements ********** -->
+        <xs:group name="classification-group">
+                <xs:annotation>
+                        <xs:documentation>
+                                Classification group.
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:sequence>
+                        <xs:element ref="section" minOccurs="0" />
+                        <xs:element ref="class" minOccurs="0" />
+                        <xs:element ref="subclass" minOccurs="0" />
+                        <xs:element ref="main-group" minOccurs="0" />
+                        <xs:element ref="subgroup" minOccurs="0" />
+                </xs:sequence>
+        </xs:group>
+
+	<xs:group name="ipc-classification-group">
+		<xs:annotation>
+			<xs:documentation>
+				IPC classification group.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="text" />
+			<xs:sequence minOccurs="0">
+				<xs:element ref="edition" minOccurs="0" />
+				<xs:group ref="classification-group" />
+			</xs:sequence>
+		</xs:sequence>
+	</xs:group>
+
+	<xs:group name="name-group">
+                <xs:sequence>
+                        <xs:choice>
+				<xs:sequence>
+					<xs:element ref="name" minOccurs="0" />
+					<xs:element ref="orgname" minOccurs="0" />
+					<xs:element ref="org-name" minOccurs="0" />
+					<xs:element ref="department" minOccurs="0" />					
+				</xs:sequence>
+			</xs:choice>
+			<xs:element ref="registered-number" minOccurs="0" />
+		</xs:sequence>
+	</xs:group>
+
+	<xs:group name="national-classification-group">
+		<xs:annotation>
+			<xs:documentation>
+				National classification group.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="text" />
+			<xs:sequence minOccurs="0">
+				<xs:element ref="edition" minOccurs="0" />
+				<xs:element ref="section" minOccurs="0" />
+				<xs:element ref="class" minOccurs="0" />
+				<xs:element ref="subclass" minOccurs="0" />
+				<xs:element ref="main-group" minOccurs="0" />
+				<xs:element ref="subgroup" minOccurs="0" />
+			</xs:sequence>
+		</xs:sequence>
+	</xs:group>
+
+
+
+	<!-- ********** Complex Types ********** -->
+	<xs:complexType name="combination-setType">
+		<xs:sequence>
+			<xs:element name="group-number" type="xs:string"/>
+			<xs:element name="combination-rank" type="combination-rankType" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attribute name="status" type="xs:string"/>
+		<xs:attribute name="sequence" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<xs:complexType name="combination-rankType">
+		<xs:sequence>
+			<xs:element name="rank-number" type="xs:string"/>
+			<xs:element name="patent-classification" type="patent-classificationType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="patent-classificationType">
+		<xs:sequence>
+			<xs:element name="classification-scheme">
+				<xs:complexType>
+					<xs:choice minOccurs="0">
+						<xs:element name="edition" type="xs:string"/>
+						<xs:element name="date" type="xs:string"/>
+					</xs:choice>
+					<xs:attribute name="office" type="xs:string" use="required"/>
+					<xs:attribute name="scheme" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:sequence>
+				<xs:element name="classification-symbol" type="xs:string"/>				
+				<xs:element name="section" type="xs:string" minOccurs="0"/>
+				<xs:element name="class" type="xs:string" minOccurs="0"/>
+				<xs:element name="subclass" type="xs:string" minOccurs="0"/>
+				<xs:element name="main-group" type="xs:string" minOccurs="0"/>
+				<xs:element name="subgroup" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+			
+			<xs:element name="classification-level" type="xs:string" minOccurs="0"/>
+			<xs:element name="symbol-position" type="xs:string" minOccurs="0"/>
+			<xs:element name="classification-value" type="xs:string" minOccurs="0"/>
+			<xs:element name="classification-status" type="xs:string" minOccurs="0"/>
+			<xs:element name="classification-data-source" type="xs:string" minOccurs="0"/>
+			<xs:element name="generating-office" type="xs:string" minOccurs="0"/>
+			<xs:element ref="action-date" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attribute name="status" type="xs:string"/>
+		<xs:attribute name="sequence" type="xs:string"/>
+	</xs:complexType>
+	
+	<xs:complexType name="ipc-further-classification-type">
+		<xs:annotation>
+			<xs:documentation>
+				IPC further classification type.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:group ref="ipc-classification-group" />
+		</xs:sequence>
+		<xs:attribute name="sequence" type="sequence-type" />
+	</xs:complexType>
+
+	<xs:complexType name="ipc-main-classification-type">
+		<xs:annotation>
+			<xs:documentation>
+				IPC main classification type.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:group ref="ipc-classification-group" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="national-further-classification-type">
+		<xs:annotation>
+			<xs:documentation>
+				Further/secondary classification. (ST.32 equivalency = B512/B522)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:group ref="national-classification-group" />
+		</xs:sequence>
+		<xs:attribute name="sequence" type="sequence-type" />
+	</xs:complexType>
+
+	<xs:complexType name="national-main-classification-type">
+		<xs:annotation>
+			<xs:documentation>
+				Main classification. (ST.32 equivalency = B511/B521)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:group ref="national-classification-group" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="post-issuance-element-type">
+		<xs:annotation>
+			<xs:documentation>
+				US Post-issuance data element.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="date" />
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" />
+		<xs:attribute name="sequence" type="sequence-type" />
+	</xs:complexType>
+	
+	<xs:complexType name="patent-classificationsType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="patent-classification" type="patent-classificationType"/>
+			<xs:element name="combination-set" type="combination-setType"/>
+		</xs:choice>
+		<xs:attribute name="ID" type="xs:ID"/>
+	</xs:complexType>
+
+
+	<!-- ********** Simple Types ********** -->
+	<xs:simpleType name="applicant-type">
+		<xs:annotation>
+			<xs:documentation>
+				Applicant enumeration type.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="applicant" />
+			<xs:enumeration value="applicant-inventor" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="boolean-type">
+		<xs:annotation>
+			<xs:documentation>
+				Boolean enumeration type.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="yes" />
+			<xs:enumeration value="no" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="citation-type">
+		<xs:annotation>
+			<xs:documentation>
+				The TYPE of citation (office specific). (recommended):
+				a - Abstract citation of no specific kind
+				b - Book citation
+				i - Bilogical abstract citation
+				c - Chemical abstracts citation
+				e - Database citation
+				d - Derwent citation
+				p - Patent cited within NPL group
+				j - Patent Abstracts of Japan citation (REC 067)
+				s - Serial / Journal / Periodical citation
+				w - World Wide Web / Internet search citation
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[abcdeijpsw]" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="country-type">
+		<xs:annotation>
+			<xs:documentation>
+				Country type.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{2}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="data-format-type">
+		<xs:annotation>
+			 <xs:documentation>"docdb": standardised following the DOCDB primary standardisation rules;</xs:documentation>
+			<xs:documentation>"original": as supplied by the provider (converted to UTF-8)</xs:documentation>
+			<xs:documentation>"questel": questel normalization</xs:documentation>
+			<xs:documentation>"machine translation": machine generated</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="equivalent" />
+			<xs:enumeration value="original" />
+			<xs:enumeration value="machine_translation" />			
+			<xs:enumeration value="first_claim" />
+			<xs:enumeration value="human_translation" />
+			<xs:enumeration value="transcript" />
+			<xs:enumeration value="family_abstract" />
+			<xs:enumeration value="docdb" />			
+			<xs:enumeration value="questel" />
+			<xs:enumeration value="questel_Uid" />			
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="date-type">
+		<xs:annotation>
+			<xs:documentation>
+				Components of a date. Format: YYYYMMDD/YYYYMM00/YYYY0000/00000000/0.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([1][0-9]|[2][0])[0-9]{2}([0][1-9]|[1][0-2])[0-9]{2}" />
+			<xs:pattern value="([1][0-9]|[2][0])[0-9]{2}([0][1-9]|[1][0-2])[0]{2}" />
+			<xs:pattern value="([1][0-9]|[2][0])[0-9]{2}[0]{2}[0]{2}" />
+			<xs:pattern value="[0]{4}[0]{2}[0]{2}" />
+			<xs:pattern value="[0]{1}" />
+		</xs:restriction>
+	</xs:simpleType>
+
+        <xs:simpleType name="kind-type">
+                <xs:annotation>
+                        <xs:documentation>
+                                Kind type, i.e. A1, B2 etc.
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z][A-Z0-9]?" />
+                </xs:restriction>
+        </xs:simpleType>
+
+        <xs:simpleType name="language-type">
+                <xs:annotation>
+                        <xs:documentation>
+                                This type is compatible to that of the attribute xml:lang (RFC3066).
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:restriction base="xs:string">
+                        <xs:pattern value="[a-z]{2}" />
+                </xs:restriction>
+        </xs:simpleType>
+
+        <xs:simpleType name="name-type">
+                <xs:annotation>
+                        <xs:documentation>
+                                Name enumeration type.
+                        </xs:documentation>
+                </xs:annotation>
+                <xs:restriction base="xs:string">
+                        <xs:enumeration value="legal" />
+                        <xs:enumeration value="natural" />
+                </xs:restriction>
+        </xs:simpleType>
+
+	<xs:simpleType name="priority-kind">
+		<xs:annotation>
+			<xs:documentation>
+				Priority kind enumeration type.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="national" />
+			<xs:enumeration value="regional" />
+			<xs:enumeration value="international" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="representative-type">
+		<xs:annotation>
+			<xs:documentation>
+				Representative enumeration type.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="agent" />
+			<xs:enumeration value="attorney" />
+			<xs:enumeration value="common-representative" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="conveyance-type">
+		<xs:annotation>
+			<xs:documentation>
+				reassignment enumeration type.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="reassignment" />
+			<xs:enumeration value="licensing interest" />
+			<xs:enumeration value="securities interest" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="licensetype">
+		<xs:annotation>
+			<xs:documentation>
+				license-type enumeration type only for LICI.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="confirmatory" />
+			<xs:enumeration value="license" />		
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="schema-version-type">
+		<xs:annotation>
+			<xs:documentation>
+				Schema version type, i.e. 1.0.0a.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]+\.[0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="sequence-type">
+		<xs:annotation>
+			<xs:documentation>
+				Sequence type, i.e. 00, 01 etc.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="text-type">
+		<xs:annotation>
+			<xs:documentation>
+				Non-empty text type.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

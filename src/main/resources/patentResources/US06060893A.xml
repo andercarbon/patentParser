@@ -1,0 +1,2809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questel-patent-document lang="en" date-produced="20190901" produced-by="Questel" schema-version="3.23" file="US06060893A.xml">
+  <bibliographic-data lang="en">
+    <publication-reference publ-desc="Patents Granted before 2001-04-15">
+      <document-id>
+        <country>US</country>
+        <doc-number>06060893</doc-number>
+        <kind>A</kind>
+        <date>20000509</date>
+      </document-id>
+      <document-id data-format="questel">
+        <doc-number>US6060893</doc-number>
+      </document-id>
+    </publication-reference>
+    <original-publication-kind>A</original-publication-kind>
+    <application-reference family-id="46202833" extended-family-id="13720898">
+      <document-id>
+        <country>US</country>
+        <doc-number>08976846</doc-number>
+        <kind>A</kind>
+        <date>19971124</date>
+      </document-id>
+      <document-id data-format="questel">
+        <doc-number>1997US-08976846</doc-number>
+      </document-id>
+      <document-id data-format="questel_Uid">
+        <doc-number>43131285</doc-number>
+      </document-id>
+    </application-reference>
+    <language-of-filing>en</language-of-filing>
+    <language-of-publication>en</language-of-publication>
+    <priority-claims>
+      <priority-claim kind="national" sequence="1">
+        <country>US</country>
+        <doc-number>97684697</doc-number>
+        <kind>A</kind>
+        <date>19971124</date>
+        <priority-active-indicator>N</priority-active-indicator>
+      </priority-claim>
+      <priority-claim data-format="questel" sequence="1">
+        <doc-number>1997US-08976846</doc-number>
+      </priority-claim>
+      <priority-claim kind="national" sequence="2">
+        <country>US</country>
+        <doc-number>58717596</doc-number>
+        <kind>A</kind>
+        <date>19960112</date>
+        <priority-linkage-type>3</priority-linkage-type>
+        <priority-active-indicator>Y</priority-active-indicator>
+      </priority-claim>
+      <priority-claim data-format="questel" sequence="2">
+        <doc-number>1996US-08587175</doc-number>
+      </priority-claim>
+      <priority-claim kind="national" sequence="3">
+        <country>US</country>
+        <doc-number>39830995</doc-number>
+        <kind>A</kind>
+        <date>19950301</date>
+        <priority-linkage-type>2</priority-linkage-type>
+        <priority-active-indicator>Y</priority-active-indicator>
+      </priority-claim>
+      <priority-claim data-format="questel" sequence="3">
+        <doc-number>1995US-08398309</doc-number>
+      </priority-claim>
+      <priority-claim kind="national" sequence="4">
+        <country>US</country>
+        <doc-number>34506494</doc-number>
+        <kind>A</kind>
+        <date>19941114</date>
+        <priority-linkage-type>2</priority-linkage-type>
+        <priority-active-indicator>Y</priority-active-indicator>
+      </priority-claim>
+      <priority-claim data-format="questel" sequence="4">
+        <doc-number>1994US-08345064</doc-number>
+      </priority-claim>
+      <priority-claim kind="national" sequence="5">
+        <country>US</country>
+        <doc-number>12489993</doc-number>
+        <kind>A</kind>
+        <date>19930921</date>
+        <priority-linkage-type>2</priority-linkage-type>
+        <priority-active-indicator>Y</priority-active-indicator>
+      </priority-claim>
+      <priority-claim data-format="questel" sequence="5">
+        <doc-number>1993US-08124899</doc-number>
+      </priority-claim>
+      <priority-claim kind="national" sequence="6">
+        <country>US</country>
+        <doc-number>4667593</doc-number>
+        <kind>A</kind>
+        <date>19930414</date>
+        <priority-linkage-type>2</priority-linkage-type>
+        <priority-active-indicator>N</priority-active-indicator>
+      </priority-claim>
+      <priority-claim data-format="questel" sequence="6">
+        <doc-number>1993US-08046675</doc-number>
+      </priority-claim>
+      <priority-claim kind="national" sequence="7">
+        <country>US</country>
+        <doc-number>97393192</doc-number>
+        <kind>A</kind>
+        <date>19921110</date>
+        <priority-linkage-type>2</priority-linkage-type>
+        <priority-active-indicator>N</priority-active-indicator>
+      </priority-claim>
+      <priority-claim data-format="questel" sequence="7">
+        <doc-number>1992US-07973931</doc-number>
+      </priority-claim>
+      <priority-claim kind="national" sequence="8">
+        <country>US</country>
+        <doc-number>70985891</doc-number>
+        <kind>A</kind>
+        <date>19910604</date>
+        <priority-linkage-type>B</priority-linkage-type>
+        <priority-active-indicator>Y</priority-active-indicator>
+      </priority-claim>
+      <priority-claim data-format="questel" sequence="8">
+        <doc-number>1991US-07709858</doc-number>
+      </priority-claim>
+    </priority-claims>
+    <dates-of-public-availability>
+      <publication-of-grant-date>
+        <date>20000509</date>
+      </publication-of-grant-date>
+    </dates-of-public-availability>
+    <classifications-ipcr>
+      <classification-ipcr sequence="1">
+        <text>G01R   1/04        20060101A I20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>1</main-group>
+        <subgroup>04</subgroup>
+        <classification-value>I</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="2">
+        <text>G01R   1/067       20060101A N20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>1</main-group>
+        <subgroup>067</subgroup>
+        <classification-value>N</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="3">
+        <text>G01R   1/073       20060101A N20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>1</main-group>
+        <subgroup>073</subgroup>
+        <classification-value>N</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="4">
+        <text>G01R   3/00        20060101A N20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>3</main-group>
+        <subgroup>00</subgroup>
+        <classification-value>N</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="5">
+        <text>G01R  31/28        20060101A I20070721RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>31</main-group>
+        <subgroup>28</subgroup>
+        <classification-value>I</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20070721</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="6">
+        <text>H01L  21/60        20060101A I20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>21</main-group>
+        <subgroup>60</subgroup>
+        <classification-value>I</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="7">
+        <text>H01L  21/66        20060101A I20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>21</main-group>
+        <subgroup>66</subgroup>
+        <classification-value>I</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="8">
+        <text>H01L  21/68        20060101A I20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>21</main-group>
+        <subgroup>68</subgroup>
+        <classification-value>I</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="9">
+        <text>H01L  23/13        20060101A I20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>23</main-group>
+        <subgroup>13</subgroup>
+        <classification-value>I</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="10">
+        <text>H01L  23/498       20060101A I20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>23</main-group>
+        <subgroup>498</subgroup>
+        <classification-value>I</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="11">
+        <text>H05K   3/00        20060101A N20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>3</main-group>
+        <subgroup>00</subgroup>
+        <classification-value>N</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+      <classification-ipcr sequence="12">
+        <text>H05K   3/42        20060101A N20051008RMEP</text>
+        <ipc-version-indicator>
+          <date>20060101</date>
+        </ipc-version-indicator>
+        <classification-level>A</classification-level>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>3</main-group>
+        <subgroup>42</subgroup>
+        <classification-value>N</classification-value>
+        <generating-office>
+          <country>EP</country>
+        </generating-office>
+        <classification-status>R</classification-status>
+        <classification-data-source>M</classification-data-source>
+        <action-date>
+          <date>20051008</date>
+        </action-date>
+      </classification-ipcr>
+    </classifications-ipcr>
+    <classification-national>
+      <country>US</country>
+      <main-classification>
+        <text>324756020</text>
+        <class>324</class>
+        <subclass>756020</subclass>
+      </main-classification>
+      <further-classification sequence="1">
+        <text>257E21509</text>
+        <class>257</class>
+        <subclass>E21509</subclass>
+      </further-classification>
+      <further-classification sequence="2">
+        <text>257E21525</text>
+        <class>257</class>
+        <subclass>E21525</subclass>
+      </further-classification>
+      <further-classification sequence="3">
+        <text>257E23004</text>
+        <class>257</class>
+        <subclass>E23004</subclass>
+      </further-classification>
+      <further-classification sequence="4">
+        <text>257E23069</text>
+        <class>257</class>
+        <subclass>E23069</subclass>
+      </further-classification>
+      <further-classification sequence="5">
+        <text>257E23070</text>
+        <class>257</class>
+        <subclass>E23070</subclass>
+      </further-classification>
+      <further-classification sequence="6">
+        <text>324762030</text>
+        <class>324</class>
+        <subclass>762030</subclass>
+      </further-classification>
+    </classification-national>
+    <patent-classifications>
+      <patent-classification sequence="1">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>G01R-001/0466</classification-symbol>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>1</main-group>
+        <subgroup>0466</subgroup>
+        <symbol-position>F</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="2">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>G01R-001/0483</classification-symbol>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>1</main-group>
+        <subgroup>0483</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="3">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>G01R-003/00</classification-symbol>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>3</main-group>
+        <subgroup>00</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="4">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>G01R-031/2863</classification-symbol>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>31</main-group>
+        <subgroup>2863</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="5">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>G01R-031/2893</classification-symbol>
+        <section>G</section>
+        <class>01</class>
+        <subclass>R</subclass>
+        <main-group>31</main-group>
+        <subgroup>2893</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="6">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-021/6835</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>21</main-group>
+        <subgroup>6835</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="7">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-022/20</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>22</main-group>
+        <subgroup>20</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="8">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-023/13</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>23</main-group>
+        <subgroup>13</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="9">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-023/49816</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>23</main-group>
+        <subgroup>49816</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="10">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-023/49838</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>23</main-group>
+        <subgroup>49838</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="11">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-024/45</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>24</main-group>
+        <subgroup>45</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20151030</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="12">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-024/48</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>24</main-group>
+        <subgroup>48</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20130304</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="13">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-024/80</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>24</main-group>
+        <subgroup>80</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="14">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-024/85</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>24</main-group>
+        <subgroup>85</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="15">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2224/16145</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2224</main-group>
+        <subgroup>16145</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="16">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2224/451</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2224</main-group>
+        <subgroup>451</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150505</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="17">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2224/48</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2224</main-group>
+        <subgroup>48</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="18">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2224/85001</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2224</main-group>
+        <subgroup>85001</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="19">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2225/06562</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2225</main-group>
+        <subgroup>06562</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="20">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/00014</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>00014</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="21">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01006</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01006</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="22">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01013</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01013</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="23">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01014</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01014</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="24">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01028</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01028</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="25">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01029</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01029</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="26">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01033</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01033</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="27">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01039</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01039</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="28">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01042</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01042</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="29">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01046</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01046</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="30">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01047</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01047</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="31">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01073</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01073</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="32">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01074</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01074</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="33">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01077</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01077</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="34">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01078</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01078</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="35">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/01079</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>01079</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="36">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/014</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>014</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="37">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/14</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>14</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="38">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/15151</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>15151</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="39">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/15174</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>15174</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="40">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/181</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>181</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150904</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="41">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/19041</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>19041</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="42">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H01L-2924/30105</classification-symbol>
+        <section>H</section>
+        <class>01</class>
+        <subclass>L</subclass>
+        <main-group>2924</main-group>
+        <subgroup>30105</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="43">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-003/0058</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>3</main-group>
+        <subgroup>0058</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="44">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-003/0067</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>3</main-group>
+        <subgroup>0067</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="45">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-003/4007</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>3</main-group>
+        <subgroup>4007</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>I</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="46">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-003/423</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>3</main-group>
+        <subgroup>423</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="47">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-2201/0133</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>2201</main-group>
+        <subgroup>0133</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="48">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-2201/0347</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>2201</main-group>
+        <subgroup>0347</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="49">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-2201/0367</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>2201</main-group>
+        <subgroup>0367</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="50">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-2201/0394</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>2201</main-group>
+        <subgroup>0394</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="51">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-2201/09481</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>2201</main-group>
+        <subgroup>09481</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="52">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-2201/09563</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>2201</main-group>
+        <subgroup>09563</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="53">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-2203/0307</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>2203</main-group>
+        <subgroup>0307</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <patent-classification sequence="54">
+        <classification-scheme office="EP" scheme="CPC">
+          <date>20130101</date>
+        </classification-scheme>
+        <classification-symbol>H05K-2203/0723</classification-symbol>
+        <section>H</section>
+        <class>05</class>
+        <subclass>K</subclass>
+        <main-group>2203</main-group>
+        <subgroup>0723</subgroup>
+        <symbol-position>L</symbol-position>
+        <classification-value>A</classification-value>
+        <classification-status>B</classification-status>
+        <classification-data-source>H</classification-data-source>
+        <action-date>
+          <date>20150508</date>
+        </action-date>
+      </patent-classification>
+      <combination-set sequence="55">
+        <group-number>1</group-number>
+        <combination-rank>
+          <rank-number>1</rank-number>
+          <patent-classification>
+            <classification-scheme office="EP" scheme="CPC">
+              <date>20130101</date>
+            </classification-scheme>
+            <classification-symbol>H01L-2924/00014</classification-symbol>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>2924</main-group>
+            <subgroup>00014</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>A</classification-value>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+            <action-date>
+              <date>20150508</date>
+            </action-date>
+          </patent-classification>
+        </combination-rank>
+        <combination-rank>
+          <rank-number>2</rank-number>
+          <patent-classification>
+            <classification-scheme office="EP" scheme="CPC">
+              <date>20130101</date>
+            </classification-scheme>
+            <classification-symbol>H01L-2224/78</classification-symbol>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>2224</main-group>
+            <subgroup>78</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>A</classification-value>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+            <action-date>
+              <date>20150508</date>
+            </action-date>
+          </patent-classification>
+        </combination-rank>
+      </combination-set>
+      <combination-set sequence="56">
+        <group-number>2</group-number>
+        <combination-rank>
+          <rank-number>1</rank-number>
+          <patent-classification>
+            <classification-scheme office="EP" scheme="CPC">
+              <date>20130101</date>
+            </classification-scheme>
+            <classification-symbol>H01L-2224/451</classification-symbol>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>2224</main-group>
+            <subgroup>451</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>A</classification-value>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+            <action-date>
+              <date>20150505</date>
+            </action-date>
+          </patent-classification>
+        </combination-rank>
+        <combination-rank>
+          <rank-number>2</rank-number>
+          <patent-classification>
+            <classification-scheme office="EP" scheme="CPC">
+              <date>20130101</date>
+            </classification-scheme>
+            <classification-symbol>H01L-2924/00</classification-symbol>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>2924</main-group>
+            <subgroup>00</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>A</classification-value>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+            <action-date>
+              <date>20150505</date>
+            </action-date>
+          </patent-classification>
+        </combination-rank>
+      </combination-set>
+      <combination-set sequence="57">
+        <group-number>3</group-number>
+        <combination-rank>
+          <rank-number>1</rank-number>
+          <patent-classification>
+            <classification-scheme office="EP" scheme="CPC">
+              <date>20130101</date>
+            </classification-scheme>
+            <classification-symbol>H01L-2224/451</classification-symbol>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>2224</main-group>
+            <subgroup>451</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>A</classification-value>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+            <action-date>
+              <date>20150824</date>
+            </action-date>
+          </patent-classification>
+        </combination-rank>
+        <combination-rank>
+          <rank-number>2</rank-number>
+          <patent-classification>
+            <classification-scheme office="EP" scheme="CPC">
+              <date>20130101</date>
+            </classification-scheme>
+            <classification-symbol>H01L-2924/00014</classification-symbol>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>2924</main-group>
+            <subgroup>00014</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>A</classification-value>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+            <action-date>
+              <date>20150824</date>
+            </action-date>
+          </patent-classification>
+        </combination-rank>
+      </combination-set>
+      <combination-set sequence="58">
+        <group-number>4</group-number>
+        <combination-rank>
+          <rank-number>1</rank-number>
+          <patent-classification>
+            <classification-scheme office="EP" scheme="CPC">
+              <date>20130101</date>
+            </classification-scheme>
+            <classification-symbol>H01L-2924/181</classification-symbol>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>2924</main-group>
+            <subgroup>181</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>A</classification-value>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+            <action-date>
+              <date>20150904</date>
+            </action-date>
+          </patent-classification>
+        </combination-rank>
+        <combination-rank>
+          <rank-number>2</rank-number>
+          <patent-classification>
+            <classification-scheme office="EP" scheme="CPC">
+              <date>20130101</date>
+            </classification-scheme>
+            <classification-symbol>H01L-2924/00</classification-symbol>
+            <section>H</section>
+            <class>01</class>
+            <subclass>L</subclass>
+            <main-group>2924</main-group>
+            <subgroup>00</subgroup>
+            <symbol-position>L</symbol-position>
+            <classification-value>A</classification-value>
+            <classification-status>B</classification-status>
+            <classification-data-source>H</classification-data-source>
+            <action-date>
+              <date>20150904</date>
+            </action-date>
+          </patent-classification>
+        </combination-rank>
+      </combination-set>
+    </patent-classifications>
+    <number-of-claims>24</number-of-claims>
+    <exemplary-claim>1</exemplary-claim>
+    <figures>
+      <number-of-drawing-sheets>3</number-of-drawing-sheets>
+      <number-of-figures>9</number-of-figures>
+      <image-key data-format="questel">US6060893</image-key>
+    </figures>
+    <invention-title format="original" lang="en" id="title_en">Carrier having slide connectors for testing unpackaged semiconductor dice</invention-title>
+    <references-cited>
+      <citation srep-phase="examiner">
+        <patcit num="1">
+          <text>MOUISSIE BOB</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>4169642</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4169642</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="2">
+          <text>JAMISON JOHN W, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>4783719</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4783719</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="3">
+          <text>MATSUOKA NORIYUKI, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>4846703</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4846703</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="4">
+          <text>IKEYA KIYOKAZU</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>4846704</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4846704</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="5">
+          <text>BENDAT ZVI, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>4899921</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4899921</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="6">
+          <text>BRIGHT EDWARD J, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>4969828</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4969828</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="7">
+          <text>MALHI SATWINDER, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5006792</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5006792</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="8">
+          <text>MALHI SATWINDER, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5073117</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5073117</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="9">
+          <text>MALHI SATWINDER, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5088190</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5088190</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="10">
+          <text>ELDER RICHARD A, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5123850</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5123850</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="11">
+          <text>WOOD ALAN G, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5302891</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5302891</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="12">
+          <text>FARNWORTH WARREN M, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5326428</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5326428</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="13">
+          <text>WOOD ALAN G, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5367253</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5367253</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="14">
+          <text>ROEBUCK RANDAL D, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5397245</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5397245</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="15">
+          <text>WOOD ALAN G, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5408190</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5408190</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="16">
+          <text>AKRAM SALMAN, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5419807</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5419807</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="17">
+          <text>CEARLEY-CABBINESS CAROL L, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5451165</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5451165</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="18">
+          <text>ROBINETTE JR WILLIAM C, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5456404</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5456404</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="19">
+          <text>AKRAM SALMAN, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5483741</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5483741</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="20">
+          <text>WOOD ALAN G, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5495179</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5495179</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="21">
+          <text>WOOD ALAN G, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5519332</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5519332</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="22">
+          <text>LIM SAMUEL S S, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5530376</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5530376</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="23">
+          <text>WOOD ALAN G, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5541525</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5541525</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="24">
+          <text>LIM SAMUEL S S, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5543725</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5543725</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="25">
+          <text>LIM SAMUEL S S, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5572140</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5572140</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="26">
+          <text>FARNWORTH WARREN, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5634267</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5634267</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="27">
+          <text>GOCHNOUR DEREK, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5678301</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5678301</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="28">
+          <text>AKRAM SALMAN, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5686317</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5686317</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="29">
+          <text>FARNWORTH WARREN M, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5691649</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5691649</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="30">
+          <text>FARNWORTH WARREN, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5796264</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5796264</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="31">
+          <text>FARNWORTH WARREN M, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5815000</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5815000</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="32">
+          <text>WOOD ALAN G, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5896036</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5896036</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation srep-phase="examiner">
+        <patcit num="33">
+          <text>GOCHNOUR DEREK, et al</text>
+          <document-id>
+            <country>US</country>
+            <doc-number>5915755</doc-number>
+            <kind>A</kind>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5915755</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="34">
+          <document-id>
+            <country>US</country>
+            <doc-number>4169642</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4169642</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="35">
+          <document-id>
+            <country>US</country>
+            <doc-number>4783719</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4783719</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="36">
+          <document-id>
+            <country>US</country>
+            <doc-number>4846703</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4846703</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="37">
+          <document-id>
+            <country>US</country>
+            <doc-number>4846704</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4846704</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="38">
+          <document-id>
+            <country>US</country>
+            <doc-number>4899921</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4899921</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="39">
+          <document-id>
+            <country>US</country>
+            <doc-number>4969828</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US4969828</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="40">
+          <document-id>
+            <country>US</country>
+            <doc-number>5006792</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5006792</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="41">
+          <document-id>
+            <country>US</country>
+            <doc-number>5073117</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5073117</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="42">
+          <document-id>
+            <country>US</country>
+            <doc-number>5088190</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5088190</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="43">
+          <document-id>
+            <country>US</country>
+            <doc-number>5123850</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5123850</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="44">
+          <document-id>
+            <country>US</country>
+            <doc-number>5302891</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5302891</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="45">
+          <document-id>
+            <country>US</country>
+            <doc-number>5326428</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5326428</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="46">
+          <document-id>
+            <country>US</country>
+            <doc-number>5367253</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5367253</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="47">
+          <document-id>
+            <country>US</country>
+            <doc-number>5397245</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5397245</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="48">
+          <document-id>
+            <country>US</country>
+            <doc-number>5408190</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5408190</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="49">
+          <document-id>
+            <country>US</country>
+            <doc-number>5419807</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5419807</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="50">
+          <document-id>
+            <country>US</country>
+            <doc-number>5451165</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5451165</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="51">
+          <document-id>
+            <country>US</country>
+            <doc-number>5456404</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5456404</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="52">
+          <document-id>
+            <country>US</country>
+            <doc-number>5483741</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5483741</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="53">
+          <document-id>
+            <country>US</country>
+            <doc-number>5495179</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5495179</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="54">
+          <document-id>
+            <country>US</country>
+            <doc-number>5519332</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5519332</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="55">
+          <document-id>
+            <country>US</country>
+            <doc-number>5530376</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5530376</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="56">
+          <document-id>
+            <country>US</country>
+            <doc-number>5541525</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5541525</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="57">
+          <document-id>
+            <country>US</country>
+            <doc-number>5543725</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5543725</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="58">
+          <document-id>
+            <country>US</country>
+            <doc-number>5572140</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5572140</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="59">
+          <document-id>
+            <country>US</country>
+            <doc-number>5634267</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5634267</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="60">
+          <document-id>
+            <country>US</country>
+            <doc-number>5678301</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5678301</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="61">
+          <document-id>
+            <country>US</country>
+            <doc-number>5686317</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5686317</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="62">
+          <document-id>
+            <country>US</country>
+            <doc-number>5691649</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5691649</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="63">
+          <document-id>
+            <country>US</country>
+            <doc-number>5796264</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5796264</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="64">
+          <document-id>
+            <country>US</country>
+            <doc-number>5815000</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5815000</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="65">
+          <document-id>
+            <country>US</country>
+            <doc-number>5896036</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5896036</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+      <citation>
+        <patcit num="66">
+          <document-id>
+            <country>US</country>
+            <doc-number>5915755</doc-number>
+          </document-id>
+          <document-id data-format="questel">
+            <doc-number>US5915755</doc-number>
+          </document-id>
+        </patcit>
+      </citation>
+    </references-cited>
+    <related-documents>
+      <division>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>58717596</doc-number>
+              <kind>A</kind>
+              <date>19960112</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>587175</doc-number>
+              <date>19960116</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>5691649</doc-number>
+            </document-id>
+          </parent-doc>
+        </relation>
+      </division>
+      <continuation-in-part>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>39830995</doc-number>
+              <kind>A</kind>
+              <date>19950301</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>34506494</doc-number>
+              <kind>A</kind>
+              <date>19941114</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>12489993</doc-number>
+              <kind>A</kind>
+              <date>19930921</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>4667593</doc-number>
+              <kind>A</kind>
+              <date>19930414</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>97393192</doc-number>
+              <kind>A</kind>
+              <date>19921110</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>398309</doc-number>
+              <date>19950301</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>5519332</doc-number>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>345064</doc-number>
+              <date>19941114</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>5541525</doc-number>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>124899</doc-number>
+              <date>19930921</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>5495179</doc-number>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>046675</doc-number>
+              <date>19930414</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>5367253</doc-number>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>973931</doc-number>
+              <date>19921110</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>5302891</doc-number>
+            </document-id>
+          </parent-doc>
+        </relation>
+      </continuation-in-part>
+      <continuation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>70985891</doc-number>
+              <kind>A</kind>
+              <date>19910604</date>
+            </document-id>
+            <parent-status>ABANDONED</parent-status>
+          </parent-doc>
+        </relation>
+        <relation>
+          <parent-doc>
+            <document-id>
+              <country>US</country>
+              <doc-number>709858</doc-number>
+              <date>19910604</date>
+            </document-id>
+          </parent-doc>
+        </relation>
+      </continuation>
+    </related-documents>
+    <parties>
+      <applicants>
+        <applicant data-format="original" app-type="applicant" sequence="1">
+          <addressbook lang="en">
+            <orgname>Micron Technology, Inc.</orgname>
+            <address>
+              <address-1>Boise, ID, US</address-1>
+              <city>Boise</city>
+              <state>ID</state>
+              <country>US</country>
+            </address>
+          </addressbook>
+          <nationality>
+            <country>US</country>
+          </nationality>
+        </applicant>
+        <applicant data-format="questel" app-type="applicant" sequence="2">
+          <addressbook lang="en">
+            <orgname>MICRON TECHNOLOGY</orgname>
+          </addressbook>
+          <nationality>
+            <country>US</country>
+          </nationality>
+        </applicant>
+      </applicants>
+      <inventors>
+        <inventor data-format="original" sequence="1">
+          <addressbook lang="en">
+            <name>Farnworth, Warren M.</name>
+            <address>
+              <address-1>Nampa, ID, US</address-1>
+              <city>Nampa</city>
+              <state>ID</state>
+              <country>US</country>
+            </address>
+          </addressbook>
+          <nationality>
+            <country>US</country>
+          </nationality>
+        </inventor>
+        <inventor data-format="original" sequence="2">
+          <addressbook lang="en">
+            <name>Akram, Salman</name>
+            <address>
+              <address-1>Boise, ID, US</address-1>
+              <city>Boise</city>
+              <state>ID</state>
+              <country>US</country>
+            </address>
+          </addressbook>
+          <nationality>
+            <country>US</country>
+          </nationality>
+        </inventor>
+        <inventor data-format="original" sequence="3">
+          <addressbook lang="en">
+            <name>Brooks, Mike</name>
+            <address>
+              <address-1>Caldwell, ID, US</address-1>
+              <city>Caldwell</city>
+              <state>ID</state>
+              <country>US</country>
+            </address>
+          </addressbook>
+          <nationality>
+            <country>US</country>
+          </nationality>
+        </inventor>
+      </inventors>
+      <agents>
+        <agent sequence="1" rep-type="agent">
+          <addressbook lang="en">
+            <name>Gratton, Stephen A.</name>
+          </addressbook>
+        </agent>
+      </agents>
+    </parties>
+    <examiners>
+      <primary-examiner>
+        <name>Karlsen, Ernest</name>
+      </primary-examiner>
+    </examiners>
+    <lgst-data>
+      <lgst-status>EXPIRED</lgst-status>
+    </lgst-data>
+  </bibliographic-data>
+  <abstract format="original" lang="en" id="abstr_en">
+    <p id="P-EN-00001" num="00001">
+      <br/>
+      A carrier for testing an unpackaged semiconductor die is provided.
+      <br/>
+      The carrier comprises a base for holding the die, an interconnect for establishing a temporary electrical connection with the die, and a force applying mechanism for biasing the die and interconnect together.
+      <br/>
+      The base includes external contacts arranged as flat metal pads in a dense grid array and electrically connected to a pattern of contact pads.
+      <br/>
+      The carrier also includes a pair of slide connector members which provide an electrical p ath between the contact pads on the base and corresponding contact pads on the interconnect.
+      <br/>
+      The slide connector members can be formed of molded plastic or ceramic and include tine contacts that slidably engage the contact pads on the interconnect and base.
+      <br/>
+      The slide connector members permit the interconnect to be easily replaced for testing of different types of dice.
+    </p>
+  </abstract>
+  <description format="original" lang="en" id="desc_en">
+    <p num="1">
+      <h1>CROSS REFERENCE TO RELATED APPLICATIONS</h1>
+    </p>
+    <p num="2">This application is a division of application Ser. No. 08/587,175 filed Jan. 16, 1996, U.S. Pat. No. 5,691,649, which is a continuation-in-part of application Ser. No. 08/398,309 filed Mar. 1, 1995, U.S. Pat. No. 5,519,332, which is a continuation-in-part of application Ser. No. 08/345,064 filed Nov. 14, 1994, U.S. Pat. No. 5,541,525, which is a continuation-in-part of application Ser. No. 08/124,899 filed Sep. 21, 1993, U.S. Pat. No. 5,495,179, which is a continuation-in-part of application Ser. No. 08/046,675, filed Apr. 14, 1993, U.S. Pat. No. 5,367,253, which is a continuation-in-part of application Ser. No. 07/973,931 filed Nov. 10, 1992, U.S. Pat. No. 5,302,891, which is a continuation of application Ser. No. 07/709,858, filed Jun. 4, 1991, abandoned.</p>
+    <p num="3">This application is related to applications Ser. No. 07/788,065 filed Nov. 5, 1991, U.S. Pat. No. 5,440,240; Ser. No. 07/953,750 filed Sep. 29, 1992, now abandoned; Ser. No. 08/073,005 filed Jun. 7, 1993, U.S. Pat. No. 5,408,190; Ser. No. 08/073,003 filed Jun. 7, 1993, now abandoned; Ser. No. 08/120,628 filed Sep. 13, 1993, now abandoned; Ser. No. 07/896,297 filed Jun. 10, 1992, now U.S. Pat. No. 5,424,652; Ser. No. 08/192,391 filed Feb. 3, 1994, now U.S. Pat. No. 5,483,174; and, Ser. No. 08/137,675 filed Oct. 14, 1993, now abandoned.</p>
+    <p num="4">
+      <h1>FIELD OF THE INVENTION</h1>
+    </p>
+    <p num="5">This invention relates generally to semiconductor manufacture and specifically to the testing of semiconductor dice.</p>
+    <p num="6">
+      <h1>BACKGROUND OF THE INVENTION</h1>
+    </p>
+    <p num="7">Unpackaged semiconductor dice are used to construct multi-chip-modules and other electronic devices. Prior to use in an electronic device, an unpackaged die must be individually tested to certify that it is a known good die (KGD). Testing can include burn-in testing and full functionality testing.</p>
+    <p num="8">For test and burn-in of an unpackaged die, a carrier replaces a conventional single chip package in the manufacturing process as a temporary package. The carrier typically includes an interconnect that allows a temporary electrical connection to be made between external test circuitry and the die.</p>
+    <p num="9">In response to the need for known good die (KGD) semiconductor manufacturers have developed carriers for testing unpackaged die. As an example, carriers for testing unpackaged die are disclosed in U.S. Pat. No. 4,899,107 to Corbett et al. and U.S. Pat. No. 5,302,891 to Wood et al., which are assigned to Micron Technology, Inc.</p>
+    <p num="10">With this type of carrier, the interconnect contains the contact structure that physically aligns with and contacts the bond pads of the die. Typically the interconnect is wire bonded to connection points on the carrier which electrically communicate with external contacts, such as pins, formed on the carrier. The external contacts are connectable to test circuitry through a mating element such as a socket on a burn-in board.</p>
+    <p num="11">Because semiconductor dice are manufactured in different sizes and bond pad configurations (e.g., edge connect, end connect, LOC) it is often necessary to replace an interconnect to allow the carrier to accommodate testing of different types of dice. It would also be advantageous to provide a method other than wire bonding for establishing an electrical connection between the interconnect and carrier.</p>
+    <p num="12">In view of the foregoing, it is an object of the present invention to provide an improved carrier for testing unpackaged dice. It is yet another object of the present invention to provide an improved carrier for testing unpackaged dice that includes slide connector members that establish electrical communication between external contacts on the carrier and an interconnect for the die. Other objects, advantages and capabilities of the present invention will become more apparent as the description proceeds.</p>
+    <p num="13">
+      <h1>SUMMARY OF THE INVENTION</h1>
+    </p>
+    <p num="14">In accordance with the present invention, a carrier for temporarily packaging and testing a bare semiconductor die is provided. The carrier includes a base for holding the die, an interconnect for establishing electrical communication with the die, and a force applying mechanism for biasing the die and interconnect together. In addition, the carrier includes slide connector members which removably attach to the base and establish electrical communication between the interconnect and external contacts on the base. The slide connector members include tine contacts that slidably engage contact pads on the interconnect and contact pads on the carrier base.</p>
+    <p num="15">The carrier base can be either ceramic or plastic. The carrier base can be formed of ceramic using a ceramic lamination process or a ceramic dip formation process. Alternately, the carrier base can be formed of plastic using a 3-D injection molding process. The interconnect is mounted to the carrier base and includes contact members that contact device bond pads or other contact locations on the die. The interconnect can be formed of silicon with raised contact members having elongated penetrating projections for penetrating into the bond pads to a limited penetration depth. Alternately, the interconnect can be formed with microbump contact members mounted on a plastic film similar to two layer TAB tape. The force applying mechanism for the carrier can include a pressure plate, a spring and a bridge clamp. The force applying mechanism functions to secure the die within the base and to maintain the die and interconnect in electrical contact.</p>
+    <p num="16">The carrier is assembled by optically aligning the die and the interconnect. During the alignment procedure, the die and force applying mechanism of the package are held by an assembly tool. Flip chip optical alignment is used to align bond pads or other contact locations on the die to the contact members on the interconnect. The assembly tool then places the die on the interconnect and attaches the force applying mechanism to the carrier base.</p>
+    <p num="17">
+      <h1>BRIEF DESCRIPTION OF THE DRAWINGS</h1>
+    </p>
+    <p num="18">FIG. 1 is a plan view partially cut away of a carrier constructed in accordance with the invention;</p>
+    <p num="19">FIG. 2 is an enlarged cross sectional view taken along section line 2--2 of FIG. 1 showing a slide connector member attached to a base of the carrier;</p>
+    <p num="20">FIG. 2A is a cross sectional view equivalent to FIG. 2 of an alternate embodiment slide connector member;</p>
+    <p num="21">FIG. 3 is a cross sectional view taken along section line 3--3 of FIG. 1;</p>
+    <p num="22">FIG. 4 is a plan view of an interconnect for the carrier shown in FIG. 1;</p>
+    <p num="23">FIG. 5 is an enlarged cross sectional view taken along section line 5--5 of FIG. 4 showing a contact member on the interconnect engaging a device bond pad;</p>
+    <p num="24">FIG. 5A is a cross sectional view equivalent to FIG. 5 of an alternate embodiment interconnect;</p>
+    <p num="25">FIG. 6 is a bottom view of the carrier shown in FIG. 1; and</p>
+    <p num="26">FIG. 7 is a side elevation view of a slide connector member constructed in accordance with the invention.</p>
+    <p num="27">
+      <h1>DETAILED DESCRIPTION OF THE PREFERRED EMBODIMENT</h1>
+    </p>
+    <p num="28">Referring initially to FIGS. 1-3, a carrier 10 constructed in accordance with the invention is shown. The carrier 10, generally stated, includes: a carrier base 12 adapted to retain a die 14 for testing; a temporary interconnect 16 adapted to establish electrical communication with the die 14; a force applying mechanism 18 comprising a pressure plate 20, a spring 22 (FIG. 3) and a bridge clamp 24 (FIG. 3) for biasing the die 14 against the interconnect 16 with an evenly distributed biasing force; and a pattern of output contacts 30 (FIG. 3) formed on carrier base 12.</p>
+    <p num="29">The carrier 10 also includes a pair of slide connector members 32, 34 adapted to establish electrical communication between the interconnect 16 and the output contacts 30 on the carrier base 12. As shown in FIG. 2, the slide connector members 32, 34 snap fit onto rails 36 formed on the base 12. As also shown in FIG. 2, the slide connector members 32, 34 include upper tine contacts 38U that contact a pattern of contact pads 40 on the interconnect 16 and lower tine contacts 38L that contact a pattern of contact pads 42 on the carrier base 12. As shown in FIG. 4, the contact pads 40 on the interconnect 16 are in electrical communication with raised contact members 44 (FIG. 5) that penetrate the device bond pads 46 (FIG. 5) on the die 14 to a limited penetration depth. As shown in FIG. 6, the contact pads 42 on the carrier base 12 are in electrical communication with the output contacts 30 via a pattern of conductors 52 formed on the carrier base 12. In addition, the carrier base includes a recessed contact pad shelf 76 wherein the contact pads 42 are formed.</p>
+    <p num="30">With reference to FIG. 3, in the assembled carrier 10, the interconnect 16 fits in a cavity 26 within the carrier base 12. The carrier base 12 includes an extraction opening 28 to facilitate installation and removal of the interconnect 16. In addition, the carrier base 12 includes a pair of slotted through openings 48, 50 for retaining the force applying mechanism 18. In the assembled carrier 10, the die 14 is placed face down (i.e., bond pad side down) on the interconnect 16. The pressure plate 20, spring 22 and bridge clamp 24 all include a central opening 31A-C which are used during assembly and disassembly of the carrier 10. Specifically, the openings 31A-C permit the die 14 to be held by a vacuum tool (not shown) during optical alignment of the die 14 and interconnect 16. In a similar manner, a vacuum tool (not shown) can be used to disassemble the carrier 10. Alignment of the die 14 and interconnect 16 can be effected using flip chip optical alignment as disclosed in U.S. Pat. No. 5,519,332 and U.S. Pat. No. 5,483,174, incorporated herein by reference.</p>
+    <p num="31">The assembled carrier base 12 is designed to be placed in a burn-in oven (not shown) or other test apparatus for testing the die 14. The burn-in oven typically includes a supporting substrate having pogo pins or other electrical connectors for making an electrical connection between the output contacts 30 on the carrier 10 and external test circuitry.</p>
+    <p num="32">As shown in FIGS. 1 and 2, the slide connector members 32, 34 are adapted to removably attach to the carrier base 12, one on each side. During attachment of the slide connector members 32, 34 to the base 12, the upper tine contacts 38U can slide over the contact pads 40 on the interconnect 16 and the lower tine contacts 38L can slide over the contact pads 42 on the base 12. This arrangement permits the electrical connection between the interconnect 16 and the base 12 to be established while permitting the interconnect 16 to be easily changed to accommodate testing of different dice 14.</p>
+    <p num="33">As shown in FIGS. 2 and 7, the upper tine contacts 38U on the connector members 32, 34 are thin metal wires made with a size and pitch that corresponds to the size and pitch of the contact pads 40 on the interconnect 16. In addition, the upper tine contacts 38U are bent or formed with a u-shaped segment on a terminal end for pressing against the contact pads 40. The spring force generated by the upper tine contacts 38U insures a positive electrical connection with the contact pads 40. In addition, the size and shape of the upper tine contacts 38U permit them to be slid over the edges of the interconnect 16 during attachment of the slide connector members 32, 34 to the base 12. The lower tine contacts 38L are made in a similar shape and function in a similar manner to the upper tine contacts 38U. The size and pitch of the lower tine contacts 38L corresponds to the size and pitch of the contact pads 42 for the external contacts 30.</p>
+    <p num="34">As shown in FIG. 2, internal conductive lines 39 formed within the slide connector members 32, 34 electrically connect mating pairs of upper and lower tine contacts 38U and 38L. A fabrication process for fabricating the slide connector members 32, 34 with internal conductive lines 39 can combine electroless and electrolytic metal plating, photolithographic patterning and wet chemical etching. This fabrication technique for electronic components is sometimes referred to as molded 3-D fabrication because the molded components can include metal filled vias for interconnecting the circuitry in a z direction. Such a process is described in U.S. Pat. No. 4,985,116.</p>
+    <p num="35">Using such a fabrication process, the connector members 32, 34 can be injection molded out of a high temperature plastic such as a glass filled plastic. Suitable plastics include polyetherimide (PEI), polyethersulfone (PES), polyarylsulfone (PAS), polyphenylene sulfide (PPS), liquid crystal polymer (LCP) and polyether-ether ketone (PPEK). The injection molding process forms the connector members 32, 34 into the desired shape and with a groove 78 (FIG. 7) sized to snap fit over the side rails 36 (FIG. 2) formed on the carrier base. In addition, openings or vias are molded into the slide connector members 32, 34 and during a subsequent metallization process are filled with a conductive metal to form the internal conductive lines 39. The upper and lower tine contacts 38U and 38L are formed as thin metal wires that are mechanically attached to the internal conductive lines 39 using an attachment process such as soldering or welding. The connector members 32, 34 can also be injection molded with solid metal wires that form the upper and lower tine contacts 38U and 38L. Advantageously, the size and pitch of the tine contacts 38U and 38L can be very small to accommodate a large number of output contacts 30 corresponding a large number of device bond pads 46 (FIG. 5).</p>
+    <p num="36">FIG. 2A illustrates an alternate embodiment connector member 32A. Connector member 32A includes tine contacts 38A that make an electrical connection to both the interconnect 16 and base 12A. In this embodiment, the base 12A is formed with contact pads 42A on an upper surface that are electrically connected to internal conductive lines 39A and to the output contacts 30A for the base 12B. In this embodiment the tine contacts 38A are thin metal wires shaped with a double bend, substantially as shown in FIG. 2A, to simultaneously engage the contact pads 40 on the interconnect 16 and the contact pads 38A on the base 12A.</p>
+    <p num="37">
+      As with the slide connector members 32, 34, the carrier base 12 can be formed of an electrically insulating material such as ceramic or plastic. For example, the carrier base 12 can be formed of a ceramic material such as alumina (A1
+      <sub>2</sub>
+      O
+      <sub>3</sub>
+      ) using a high temperature ceramic lamination process. Such a process is described in U.S. patent application Ser. No. 08/398,309 filed Mar. 1, 1995, which is incorporated herein by reference. Briefly, this process involves forming metallized circuits and metal filled vias on green sheets of ceramic and then sintering the sheets to form a unitary structure.
+    </p>
+    <p num="38">The carrier base 12 can also be formed using a 3-D injection molding process out of a high temperature glass filled plastic as previously described for slide connector members 32, 34. Such a 3-D molding process can be used to form the base 12 into the desired rectangular shape and with cavities as required. During a subsequent metallization process, the external contacts 30, contact pads 42 and conductors 52 (FIG. 6) can be formed on a bottom surface of the base 12.</p>
+    <p num="39">The carrier base 12 can also be formed using a ceramic dip formation process (Cerdip). In general, with a Cerdip process a mixture of alumina lubricants and binders can be molded and sintered to form a monolithic structure. Another type of ceramic dip formation process uses a plastic rather than a ceramic body. Briefly, this Cerdip formation process pre-molds a plastic base which is then bonded to a leadframe.</p>
+    <p num="40">Referring to FIG. 4, the interconnect 16 includes the contact pads 40 and the raised contact members 44 that are electrically connected by a pattern of conductive traces 58. As shown in FIG. 5, the raised contact members 44 are adapted to establish an electrical connection with the device bond pads 46 on the die 12. The raised contact members 44 include penetrating projections 70 formed as elongated blades adapted to penetrate the device bond pads 46 to a limited penetration depth.</p>
+    <p num="41">The interconnect 16 and raised contact members 44 can be formed by etching a silicon substrate 64 (FIG. 5). An insulating layer 66 and a conductive layer 68 formed on the substrate 64 overlie the raised contact members 44. The conductive layer 68 is in electrical communication with the conductive traces 58.</p>
+    <p num="42">A suitable process for forming the contact members 44 substantially as shown in FIG. 5 is disclosed in U.S. Pat. No. 5,326,428 and U.S. Pat. No. 5,419,807 which are incorporated herein by reference. Another suitable process is disclosed in U.S. Pat. No. 5,543,741, incorporated herein by reference.</p>
+    <p num="43">With reference to FIG. 5A, the interconnect 16 can also be formed with microbump contact members 44B and conductive traces 58B formed on a plastic film 72. The microbump contact members 44B and plastic film 72 can be similar to two layer TAB tape such as ASMAT manufactured by Nitto Denko. The plastic film 72 can be mounted to a substrate 64B such as silicon using a compliant adhesive layer 74. The compliant adhesive layer 74 can be formed of a silicone elastomer, an epoxy or a polyimide material. One method for forming an interconnect with microbump contact members is described in previously cited U.S. Pat. No. 5,519,332.</p>
+    <p num="44">Referring to FIG. 6, the external contacts 30 and contact pads 42 on the carrier base 12 can be formed as flat land pads in a dense grid pattern out of a suitable metal or stack of metals. Exemplary metals can include gold, copper, silver, tungsten, tantalum, platinum, palladium and molybdenum or alloys of these metals. An exemplary stack can include a gold layer with nickel underplating. Other exemplary stacks can include other combinations of the above metals. A metallization process such as plating can be used to form the external contacts 30, contact pads 42 and the pattern of conductors 52 on a bottom surface of the carrier base 12. Such a plating process can include electrolytic or electroless deposition of a metal layer followed by resist coating, exposure, development, and selective wet chemical etching. Typically, the exposed surface of the external contacts 30 and contact pads 42 will be an electroplated metal such as gold.</p>
+    <p num="45">By way of example, a diameter of the external contacts 30 and contact pads 42 can be from about 50 μm to 500 μm. A center line to center line spacing of the external contacts 30 and contact pads 42 can be from about 50 μm to 500 μm. A representative thickness for the external contacts 30 and contact pads 42 can be from 1.25 μm to 100 μm. The external contacts 30 on the carrier base 12 are adapted to be contacted by a mating electrical connector on a burn-in board such as a pogo pin, solder ball, or other connector in electrical communication with external test circuitry. The contact pads 42 on the carrier base 12 are adapted to be contacted by the lower tine contacts 38L (FIG. 2).</p>
+    <p num="46">While the invention has been described with reference to certain preferred embodiments, as will be apparent to those skilled in the art, certain changes and modifications can be made without departing from the scope of the invention as defined by the following claims.</p>
+  </description>
+  <claims format="original" lang="en" id="claim_en">
+    <claim num="1">
+      <claim-text>
+        <h1>What is claimed is:</h1>
+      </claim-text>
+      <claim-text>1. An apparatus for testing semiconductor dice, comprising:  a base for retaining a die comprising a first set of contact lads and a plurality of external contacts in electrical communication with the first set of contact pads;  an interconnect on the base comprising a plurality of contact members configured to electrically contact a plurality of contact locations on the die, and a second set of contact pads in electrical communication with the contact members; and  a connector member on to the base comprising a plurality of tine contacts comprising first portions configured to electrically contact the first set of contact pads, and second portions configured to electrically contact the second set of contact pads to form electrical paths therebetween.</claim-text>
+    </claim>
+    <claim num="2">
+      <claim-text>2. The apparatus of claim 1 wherein the connector member comprises plastic and the spring contacts comprise wires attached to the plastic.</claim-text>
+    </claim>
+    <claim num="3">
+      <claim-text>3. The apparatus of claim 1 wherein the base comprises a side rail and the connector member comprises a groove for engaging the side rail.</claim-text>
+    </claim>
+    <claim num="4">
+      <claim-text>4. The apparatus of claim 1 wherein the base comprises ceramic.</claim-text>
+    </claim>
+    <claim num="5">
+      <claim-text>5. The apparatus of claim 1 wherein the tine contacts comprise wires and the first portions and the second portions comprise spring segments on the wires.</claim-text>
+    </claim>
+    <claim num="6">
+      <claim-text>6. The apparatus of claim 1 wherein the external contacts comprise pads.</claim-text>
+    </claim>
+    <claim num="7">
+      <claim-text>7. An apparatus for testing semiconductor dice, comprising:  a base for retaining a semiconductor die comprising a plurality of first contacts and a first set of contact pads in electrical communication with the first contacts;  an interconnect on the base comprising a plurality of contact members configured to electrically contact a plurality of contact locations on the die, and a second set of contact pads in electrical communication with the contact members; and  a connector member on the base comprising a plurality of second contacts configured to electrically contact the first set of contact pads, and to electrically contact the second set of contact pads to form electrical paths therebetween and exert a spring force for attaching the interconnect to the base.</claim-text>
+    </claim>
+    <claim num="8">
+      <claim-text>8. The apparatus of claim 7 wherein the base comprises ceramic.</claim-text>
+    </claim>
+    <claim num="9">
+      <claim-text>9. The apparatus of claim 7 wherein the connector member comprises molded plastic and the second contacts comprise wires attached to the molded plastic.</claim-text>
+    </claim>
+    <claim num="10">
+      <claim-text>10. The apparatus of claim 7 wherein the first contacts comprise pads in a grid array.</claim-text>
+    </claim>
+    <claim num="11">
+      <claim-text>11. The apparatus of claim 7 wherein the second contacts comprise first portions configured to contact the first set of contact pads and second portions configured to contact the second set of contact pads.</claim-text>
+    </claim>
+    <claim num="12">
+      <claim-text>12. The apparatus of claim 7 wherein the contact members comprise raised members on a silicon substrate.</claim-text>
+    </claim>
+    <claim num="13">
+      <claim-text>13. The apparatus of claim 7 wherein the contact members comprise microbumps on a plastic film.</claim-text>
+    </claim>
+    <claim num="14">
+      <claim-text>14. An apparatus for testing semiconductor dice comprising:  a base for retaining a semiconductor die comprising a plurality of external contacts and a first set of contact pads in electrical communication with the external contacts;  an interconnect on the base comprising a plurality of contact members for electrically contacting a plurality of contact locations on the die, and a second set of contact pads in electrical communication with the contact members; and  a member on the base comprising molded plastic and a plurality of wires attached to the molded plastic, the wires comprising first portions for electrically contacting the first set of contact pads, and second portions for electrically contacting the second set of contact pads.</claim-text>
+    </claim>
+    <claim num="15">
+      <claim-text>15. The apparatus of claim 14 wherein the external contacts are arranged in a grid array.</claim-text>
+    </claim>
+    <claim num="16">
+      <claim-text>16. The apparatus of claim 14 wherein the external contacts comprise pads in a grid array.</claim-text>
+    </claim>
+    <claim num="17">
+      <claim-text>17. The apparatus of claim 14 wherein the base comprises laminated ceramic.</claim-text>
+    </claim>
+    <claim num="18">
+      <claim-text>18. The apparatus of claim 14 wherein the base comprises a rail and the member attaches to the rail.</claim-text>
+    </claim>
+    <claim num="19">
+      <claim-text>19. An apparatus for testing semiconductor dice comprising:  a base comprising a plurality of external contacts and a first set of contact pads in electrical communication with the external contacts;  a first interconnect on the base comprising a plurality of first contact members for electrically contacting a plurality of contact locations on a first type of die retained on the base, and a second set of contact pads in electrical communication with the first contact members;  a member on the base comprising molded plastic and a plurality of wires attached to the molded plastic comprising first portions for electrically contacting the first set of contact pads, and second portions for electrically contacting the second set of contact pads; and  a second interconnect interchangeable with the first interconnect comprising a Plurality of second contact members for electrically contacting second contact locations on a second type of die retained on the base, and a third set of contact pads in electrical communication with the second contact members configured to electrically contact the second portions of the wires as the first portions of the wires electrically contact the first set of contact pads.</claim-text>
+    </claim>
+    <claim num="20">
+      <claim-text>20. The apparatus of claim 19 wherein the first contact members comprise raised members on a silicon substrate.</claim-text>
+    </claim>
+    <claim num="21">
+      <claim-text>21. The apparatus of claim 19 wherein the first contact members comprise microbumps on a plastic film.</claim-text>
+    </claim>
+    <claim num="22">
+      <claim-text>22. The apparatus of claim 19 wherein the base comprises a rail and the member attaches to the rail.</claim-text>
+    </claim>
+    <claim num="23">
+      <claim-text>23. An apparatus for testing a semiconductor die, comprising:  a base for retaining the die comprising a plurality of external contacts and a first set of contacts in electrical communication with the external contacts;  an interconnect on the base comprising a plurality of contact members configured to electrically contact a plurality of contact locations on the die, and a second set of contacts in electrical communication with the contact members; and  a connector member on the base configured to provide electrical paths between the first set of contacts and the second set of contacts and to exert a spring force for attaching the interconnect to the base, the connector member comprising a plurality of wires comprising first portions configured to electrically contact the first set of contacts and second portions configured to electrically contact the second set of contacts and exert the spring force.</claim-text>
+    </claim>
+    <claim num="24">
+      <claim-text>24. The apparatus of claim 23 wherein the first portions and the second portions comprise bends on the wires.</claim-text>
+    </claim>
+  </claims>
+</questel-patent-document>
